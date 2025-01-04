@@ -4,7 +4,7 @@ SRC_DIR=src
 INCLUDE_DIR=include
 OBJ_DIR=obj
 BIN_DIR = bin
-
+#Davi Santos Rodrigues
 all: main
 $(OBJ_DIR)/Ligue4.o: $(INCLUDE_DIR)/JogosTab.hpp $(INCLUDE_DIR)/Ligue4.hpp $(SRC_DIR)/Ligue4.cpp
 	$(CC) $(CFLAGS) -c $(SRC_DIR)/Ligue4.cpp -I$(INCLUDE_DIR) -o $(OBJ_DIR)/Ligue4.o
