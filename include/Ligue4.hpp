@@ -11,10 +11,6 @@
 #include "JogosTab.hpp"
 using namespace std;
 class Ligue4 : public JogosTab{
-private:
-    /* data */
-public:
-    Ligue4(/* args */);
-    ~Ligue4();
+
 };
 #endif

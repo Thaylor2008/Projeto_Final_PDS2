@@ -13,6 +13,6 @@ class JogosTab{
     public:
     virtual void MostraTab () const = 0;
     virtual void TestaJogada() const =0;
-    virtual ~Jogostab();
+    // virtual ~Jogostab();
 };
 #endif
