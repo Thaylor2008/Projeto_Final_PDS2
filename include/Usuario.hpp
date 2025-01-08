@@ -14,13 +14,15 @@ class Usuario{
     string nome;
     string apelido;
     string senha;
-    int vitórias;
+    int vitorias;
     int derrotas;
     int sequencia;
     Usuario(string nome, string apelido, string senha) {
         this->nome = nome;
         this->apelido = apelido;
         this->senha = senha;
+        this->vitorias = 0;
+        this->derrotas = 0;
     }
     virtual void mostrarTabela() = 0;
 };
