@@ -6,6 +6,7 @@
 #include "Admin.hpp"
 using namespace std;
 int main(int argc, char const *argv[]){
-    cout << "Hello World!";
+    Usuario *Jogador1 = new Jogador("Carlos", "Carlão", "Carlos123");
+    
     return 0;
 }
