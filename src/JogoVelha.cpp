@@ -5,7 +5,6 @@ using namespace std;
 // Construtor
 JogoVelha::JogoVelha() : JogosTab(3, 3) {}
 
-// Mostra o estado atual do tabuleiro
 void JogoVelha::mostraTabuleiro() const {
     for (int i = 0; i < 3; ++i) {
         cout << "| ";
@@ -19,7 +18,6 @@ void JogoVelha::mostraTabuleiro() const {
     }
 }
 
-// Testa se a jogada de um jogador é válida
 bool JogoVelha::testaJogada(int linha, int coluna) const {
     return linha >= 0 && linha < 3 && coluna >= 0 && coluna < 3 && tabuleiro[linha][coluna] == ' ';
 }

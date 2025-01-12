@@ -5,7 +5,6 @@ using namespace std;
 // Construtor que inicializa o tabuleiro com 6 linhas e 7 colunas
 Ligue4::Ligue4() : JogosTab(6, 7) {}
 
-// Mostra o estado atual do tabuleiro
 void Ligue4::mostraTabuleiro() const {
     for (int i = 0; i < linhas; ++i) {
         cout << "| ";
@@ -14,16 +13,14 @@ void Ligue4::mostraTabuleiro() const {
         }
         cout << endl;
     }
-    cout << "  0   1   2   3   4   5   6  " << endl; // Índices das colunas
+    cout << "  0   1   2   3   4   5   6  " << endl;
 }
 
-// Testa se a jogada em uma coluna é válida
+
 bool Ligue4::testaJogada(int linha, int coluna) const {
-    // Em Lig 4, só precisamos testar a coluna
     return coluna >= 0 && coluna < colunas && tabuleiro[0][coluna] == ' ';
 }
 
-// Atualiza o tabuleiro com a jogada do jogador
 void Ligue4::atualizaTabuleiro(int linha, int coluna, char jogador) {
     int linhaDisponivel = proximaLinhaDisponivel(coluna);
     if (linhaDisponivel != -1) {
@@ -33,7 +30,6 @@ void Ligue4::atualizaTabuleiro(int linha, int coluna, char jogador) {
     }
 }
 
-// Verifica se há um vencedor no jogo
 bool Ligue4::verificaVencedor() const {
     for (int i = 0; i < linhas; ++i) {
         for (int j = 0; j < colunas; ++j) {
@@ -45,7 +41,6 @@ bool Ligue4::verificaVencedor() const {
     return false;
 }
 
-// Executa uma partida de Lig 4 entre dois jogadores
 void Ligue4::executarPartida(Usuario* jogador1, Usuario* jogador2) {
     char simboloJogador1 = 'X';
     char simboloJogador2 = 'O';
@@ -76,21 +71,18 @@ void Ligue4::executarPartida(Usuario* jogador1, Usuario* jogador2) {
     }
 }
 
-// Verifica se uma posição é válida no tabuleiro
 bool Ligue4::posicaoValida(int linha, int coluna) const {
     return linha >= 0 && linha < linhas && coluna >= 0 && coluna < colunas;
 }
 
-// Verifica se há uma sequência de 4 peças em qualquer direção
 bool Ligue4::verificaSequencia(int linha, int coluna, char jogador) const {
-    // Verifica todas as direções: horizontal, vertical, e diagonais
     static const int direcoes[4][2] = {
-        {0, 1}, {1, 0}, {1, 1}, {1, -1} // Direções: direita, abaixo, diagonal direita, diagonal esquerda
+        {0, 1}, {1, 0}, {1, 1}, {1, -1} 
     };
 
     for (auto& direcao : direcoes) {
         int cont = 1;
-        for (int d = 1; d < 4; ++d) { // Verifica na direção positiva
+        for (int d = 1; d < 4; ++d) {
             int novaLinha = linha + d * direcao[0];
             int novaColuna = coluna + d * direcao[1];
             if (posicaoValida(novaLinha, novaColuna) && tabuleiro[novaLinha][novaColuna] == jogador) {
@@ -99,7 +91,7 @@ bool Ligue4::verificaSequencia(int linha, int coluna, char jogador) const {
                 break;
             }
         }
-        for (int d = 1; d < 4; ++d) { // Verifica na direção negativa
+        for (int d = 1; d < 4; ++d) {
             int novaLinha = linha - d * direcao[0];
             int novaColuna = coluna - d * direcao[1];
             if (posicaoValida(novaLinha, novaColuna) && tabuleiro[novaLinha][novaColuna] == jogador) {
@@ -108,17 +100,16 @@ bool Ligue4::verificaSequencia(int linha, int coluna, char jogador) const {
                 break;
             }
         }
-        if (cont >= 4) return true; // Sequência de 4 encontrada
+        if (cont >= 4) return true;
     }
     return false;
 }
 
-// Encontra a próxima linha disponível em uma coluna
 int Ligue4::proximaLinhaDisponivel(int coluna) const {
-    for (int i = linhas - 1; i >= 0; --i) { // Começa na linha mais baixa
+    for (int i = linhas - 1; i >= 0; --i) {
         if (tabuleiro[i][coluna] == ' ') {
             return i;
         }
     }
-    return -1; // Coluna está cheia
+    return -1;
 }
