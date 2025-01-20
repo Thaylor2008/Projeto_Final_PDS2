@@ -10,7 +10,7 @@ all: main
 
 $(OBJ_DIR)/Usuario.o: $(INCLUDE_DIR)/Usuario.hpp $(SRC_DIR)/Usuario.cpp
 	$(CC) $(CFLAGS) -c $(SRC_DIR)/Usuario.cpp -I$(INCLUDE_DIR) -o $(OBJ_DIR)/Usuario.o
-$(OBJ_DIR)/Admin.o: $(INCLUDE_DIR)/Usuario.hpp $(INCLUDE_DIR)/Admin.hpp $(SRC_DIR)/Admin.cpp
+$(OBJ_DIR)/Admin.o: $(INCLUDE_DIR)/Admin.hpp $(SRC_DIR)/Admin.cpp
 	$(CC) $(CFLAGS) -c $(SRC_DIR)/Admin.cpp -I$(INCLUDE_DIR) -o $(OBJ_DIR)/Admin.o
 $(OBJ_DIR)/Jogador.o: $(INCLUDE_DIR)/Usuario.hpp $(INCLUDE_DIR)/Jogador.hpp $(SRC_DIR)/Jogador.cpp
 	$(CC) $(CFLAGS) -c $(SRC_DIR)/Jogador.cpp -I$(INCLUDE_DIR) -o $(OBJ_DIR)/Jogador.o

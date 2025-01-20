@@ -22,21 +22,33 @@ int main(int argc, char const *argv[]) {
         Usuarios.push_back(new Jogador(nome, apelido, stoi(vitorias), stoi(derrotas), stoi(sequencia)));
     }
     ip.close();
+    /*
     //futuramente vai virar a funçao mostra tabela
     cout << "----------------------------------------------------------" << endl;
     for(size_t i = 0; i < Usuarios.size(); i++){
         cout << Usuarios[i]->getApelido() << " | " << Usuarios[i]->getVitorias() << " | " << Usuarios[i]->getDerrotas() << " | " << Usuarios[i]->getSequencia() << endl;
     cout << "----------------------------------------------------------" << endl;
     }
-    
-    JogoVelha jogo1;
-    Ligue4 jogo2;
-    int escolha;
-    cout << "Escolha um jogo para jogar:\n";
-    cout << "1 - Jogo da Velha\n";
-    cout << "2 - Lig 4\n";
-    cout << "Digite sua escolha: ";
-    cin >> escolha;
+    */
+    while(true){
+        string entrada;
+        cin >> entrada;
+        if(entrada == "FS"){
+            for(auto e : Usuarios){
+                delete e;
+            }
+            break;
+        }else if(entrada == "EP"){
+            char jogo;
+            string apelido1, apelido2;
+            cin >> jogo >> apelido1 >> apelido2;
+            if(jogo == 'V'){
+                JogoVelha velha;
+                velha.executarPartida(Usuarios[0], Usuarios[1]);
+            }
+            
+        }
+    }
     //cout << "Vitorias Carlos: " << Jogador1->getVitorias() << endl;
     return 0;
 }

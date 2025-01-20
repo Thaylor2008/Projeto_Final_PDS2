@@ -77,9 +77,10 @@ void JogoVelha::executarPartida(Usuario* jogador1, Usuario* jogador2) {
              << " (" << (turnoJogador1 ? simboloJogador1 : simboloJogador2) << "):" << endl;
 
         int linha, coluna;
-        cout << "Digite linha e coluna (0-2): ";
+        cout << "Digite linha e coluna (1-3): ";
         cin >> linha >> coluna;
-
+        linha--;
+        coluna--;
         if (testaJogada(linha, coluna)) {
             atualizaTabuleiro(linha, coluna, turnoJogador1 ? simboloJogador1 : simboloJogador2);
             if (verificaVencedor()) {

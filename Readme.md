@@ -13,4 +13,7 @@ Data de entrega: 23/JAN/2025
             - Fácil integração com outras linguagens
             - Futura possível integração com ferramentas de leitura e manipulação de dados, como Sheets, PowerBi
         No fim, é só uma opção melhor mesmo.
-    - Davi
+    Davi
+    - Vector de Usuários:
+        Optei pelo vector para criar os usuários por causa do tamanho dinâmico do container. Acho que é um trade-off válido de memória e velocidade.
+    Davi
