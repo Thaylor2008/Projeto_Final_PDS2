@@ -25,6 +25,6 @@ int main(int argc, char const *argv[]) {
         
     }
     
-    cout << "Vitorias Carlos: " << Jogador1->vitorias << endl;
+    cout << "Vitorias Carlos: " << Jogador1->getVitorias() << endl;
     return 0;
 }

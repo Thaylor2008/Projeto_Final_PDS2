@@ -1,29 +1,30 @@
 #ifndef USUARIO_H
 #define USUARIO_H
-#include <iostream>
-#include <vector>
-#include <iomanip>
-#include <algorithm>
+
 #include <string>
-#include <sstream>
-#include <fstream>
-#include <cmath>
-using namespace std;
-class Usuario{
-    public:
-    string nome;
-    string apelido;
-    string senha;
+
+class Usuario {
+private:
+    std::string nome;
+    std::string apelido;
+    std::string senha;
     int vitorias;
     int derrotas;
     int sequencia;
-    Usuario(string nome, string apelido, string senha) {
-        this->nome = nome;
-        this->apelido = apelido;
-        this->senha = senha;
-        this->vitorias = 0;
-        this->derrotas = 0;
-    }
+
+public:
+    Usuario(std::string nome, std::string apelido, std::string senha) : nome(nome), apelido(apelido), senha(senha), vitorias(0), derrotas(0), sequencia(0) {}
+
+    virtual ~Usuario() {}
     virtual void mostrarTabela() = 0;
+    std::string getNome();
+    std::string getApelido();
+    int getVitorias();
+    int getDerrotas();
+    int getSequencia();
+    void setVitorias(int);
+    void setDerrotas(int);
+    void setSequencia(int);
 };
+
 #endif

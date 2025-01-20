@@ -3,7 +3,7 @@
 #include "Usuario.hpp"
 class Jogador : public Usuario{
     public:
-    Jogador(string nome, string apelido, string senha);
+    Jogador(std::string nome, std::string apelido, std::string senha);
     void mostrarTabela();
 };
 #endif

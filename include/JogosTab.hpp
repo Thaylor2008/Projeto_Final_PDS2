@@ -14,10 +14,7 @@ protected:
 
 public:
     
-    JogosTab(int linhas, int colunas)
-        : linhas(linhas), colunas(colunas),
-          tabuleiro(std::vector<std::vector<char>>(linhas, std::vector<char>(colunas, ' '))) {
-    }
+    JogosTab(int linhas, int colunas) : tabuleiro(std::vector<std::vector<char>>(linhas, std::vector<char>(colunas, ' '))), linhas(linhas), colunas(colunas) {}
 
     virtual ~JogosTab() = default;
     virtual void mostraTabuleiro() const = 0;

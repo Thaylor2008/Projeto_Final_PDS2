@@ -27,13 +27,12 @@ void JogoVelha::atualizaTabuleiro(int linha, int coluna, char jogador) {
     if (testaJogada(linha, coluna)) {
         tabuleiro[linha][coluna] = jogador;
     } else {
-        cout << "Erro: tentativa de atualizar com jogada inválida." << endl;
+        cout << "Erro: tentativa de atualizar com jogada invalida." << endl;
     }
 }
 
 // Verifica se há um vencedor
 bool JogoVelha::verificaVencedor() const {
-    
     for (int i = 0; i < 3; ++i) {
         if (tabuleiro[i][0] != ' ' && tabuleiro[i][0] == tabuleiro[i][1] && tabuleiro[i][1] == tabuleiro[i][2]) {
             return true; 
@@ -74,7 +73,7 @@ void JogoVelha::executarPartida(Usuario* jogador1, Usuario* jogador2) {
 
     while (jogadas < 9) {
         mostraTabuleiro();
-        cout << "Turno de " << (turnoJogador1 ? jogador1->nome : jogador2->nome)
+        cout << "Turno de " << (turnoJogador1 ? jogador1->getApelido() : jogador2->getApelido())
              << " (" << (turnoJogador1 ? simboloJogador1 : simboloJogador2) << "):" << endl;
 
         int linha, coluna;
@@ -85,13 +84,13 @@ void JogoVelha::executarPartida(Usuario* jogador1, Usuario* jogador2) {
             atualizaTabuleiro(linha, coluna, turnoJogador1 ? simboloJogador1 : simboloJogador2);
             if (verificaVencedor()) {
                 mostraTabuleiro();
-                cout << "Parabéns! " << (turnoJogador1 ? jogador1->nome : jogador2->nome) << " venceu!" << endl;
+                cout << "Parabens! " << (turnoJogador1 ? jogador1->getApelido() : jogador2->getApelido()) << " venceu!" << endl;
                 if (turnoJogador1) {
-                    jogador1->vitorias++;
-                    jogador2->derrotas++;
+                    jogador1->setVitorias(jogador1->getVitorias() + 1);
+                    jogador2->setDerrotas(jogador2->getDerrotas() + 1);
                 } else {
-                    jogador2->vitorias++;
-                    jogador1->derrotas++;
+                    jogador2->setVitorias(jogador2->getVitorias() + 1);
+                    jogador1->setDerrotas(jogador1->getDerrotas() + 1);
                 }
                 return;
             }

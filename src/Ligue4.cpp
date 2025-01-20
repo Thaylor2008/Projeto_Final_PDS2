@@ -16,7 +16,6 @@ void Ligue4::mostraTabuleiro() const {
     cout << "  0   1   2   3   4   5   6  " << endl;
 }
 
-
 bool Ligue4::testaJogada(int linha, int coluna) const {
     return coluna >= 0 && coluna < colunas && tabuleiro[0][coluna] == ' ';
 }
@@ -48,7 +47,7 @@ void Ligue4::executarPartida(Usuario* jogador1, Usuario* jogador2) {
 
     while (true) {
         mostraTabuleiro();
-        cout << "Turno de " << (turnoJogador1 ? jogador1->nome : jogador2->nome)
+        cout << "Turno de " << (turnoJogador1 ? jogador1->getApelido() : jogador2->getApelido())
              << " (" << (turnoJogador1 ? simboloJogador1 : simboloJogador2) << "):" << endl;
 
         int coluna;
@@ -59,9 +58,14 @@ void Ligue4::executarPartida(Usuario* jogador1, Usuario* jogador2) {
             atualizaTabuleiro(0, coluna, turnoJogador1 ? simboloJogador1 : simboloJogador2);
             if (verificaVencedor()) {
                 mostraTabuleiro();
-                cout << "Parabéns! " << (turnoJogador1 ? jogador1->nome : jogador2->nome) << " venceu!" << endl;
-                if (turnoJogador1) jogador1->vitorias++, jogador2->derrotas++;
-                else jogador2->vitorias++, jogador1->derrotas++;
+                cout << "Parabéns! " << (turnoJogador1 ? jogador1->getApelido() : jogador2->getApelido()) << " venceu!" << endl;
+                if (turnoJogador1) {
+                    jogador1->setVitorias(jogador1->getVitorias() + 1);
+                    jogador2->setDerrotas(jogador2->getDerrotas() + 1);
+                } else {
+                    jogador2->setVitorias(jogador2->getVitorias() + 1);
+                    jogador1->setDerrotas(jogador1->getDerrotas() + 1);
+                }
                 return;
             }
             turnoJogador1 = !turnoJogador1;
