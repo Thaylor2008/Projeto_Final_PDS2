@@ -1,4 +1,6 @@
 #include <iostream>
+#include <fstream>
+#include <vector>
 #include "JogoVelha.hpp"
 #include "Ligue4.hpp"
 #include "Jogador.hpp"
@@ -6,8 +8,27 @@
 using namespace std;
 
 int main(int argc, char const *argv[]) {
-    Usuario* Jogador1 = new Jogador("Carlos", "Carlao", "Carlos123");
-    Usuario* Jogador2 = new Jogador("Sabrina", "Sasa", "sasa123");
+    vector<Usuario*> Usuarios;
+    ifstream ip("tests/test1.csv");
+    string cabecalho;
+    getline(ip, cabecalho);
+    while(ip.good()){
+        string nome, apelido, vitorias, derrotas, sequencia;
+        getline(ip, nome, ',');
+        getline(ip, apelido, ',');
+        getline(ip, vitorias, ',');
+        getline(ip, derrotas, ',');
+        getline(ip, sequencia, '\n');
+        Usuarios.push_back(new Jogador(nome, apelido, stoi(vitorias), stoi(derrotas), stoi(sequencia)));
+    }
+    ip.close();
+    //futuramente vai virar a funçao mostra tabela
+    cout << "----------------------------------------------------------" << endl;
+    for(size_t i = 0; i < Usuarios.size(); i++){
+        cout << Usuarios[i]->getApelido() << " | " << Usuarios[i]->getVitorias() << " | " << Usuarios[i]->getDerrotas() << " | " << Usuarios[i]->getSequencia() << endl;
+    cout << "----------------------------------------------------------" << endl;
+    }
+    
     JogoVelha jogo1;
     Ligue4 jogo2;
     int escolha;
@@ -16,15 +37,6 @@ int main(int argc, char const *argv[]) {
     cout << "2 - Lig 4\n";
     cout << "Digite sua escolha: ";
     cin >> escolha;
-    
-    if(escolha == 1){
-        jogo1.executarPartida(Jogador1, Jogador2);
-        
-    }else if(escolha == 2){
-        jogo2.executarPartida(Jogador1, Jogador2);
-        
-    }
-    
-    cout << "Vitorias Carlos: " << Jogador1->getVitorias() << endl;
+    //cout << "Vitorias Carlos: " << Jogador1->getVitorias() << endl;
     return 0;
 }
