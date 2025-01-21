@@ -8,6 +8,7 @@ Data de entrega: 23/JAN/2025
         com a sua sintaxe, passei a maior parte do tempo tentando realizar os comandos no terminal. Achei 
         que teria que instalar o Ming de novo, mas na realidade era só usar "MinGW32-make" ao invés de "make"
         - um viva ao Windows!"
+    Davi
     - Encapsulamento e responsabilidades:
         "Algumas vezes dá um nó na cabeça: 'Como diabos eu vou acessar esse método private da classe abstrata 
         dentro da classe que está referenciando uma das classes filhas!'. Mas, basta debuggar e, mesmo que
