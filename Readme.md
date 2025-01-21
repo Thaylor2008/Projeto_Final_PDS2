@@ -31,3 +31,5 @@ Data de entrega: 23/JAN/2025
         como a gerenciadora de Jogadores e Usuarios. Inicialmente, teríamos a feature de admin, que conseguiria 
         alterar e ter permissões acima de Usuarios comuns, mas acho que não vai dar tempo."
     Davi
+# Informações importantes:
+    Certifique-se de permitir a leitura dos arquivos .csv caso esteja compilando em um sistema Linux. Comando: chmod +r tests/test1.csv
