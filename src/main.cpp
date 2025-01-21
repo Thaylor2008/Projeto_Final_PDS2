@@ -20,7 +20,7 @@ int main(int argc, char const *argv[]) {
         getline(ip, vitorias, ',');
         getline(ip, derrotas, ',');
         getline(ip, sequencia, '\n');
-         (nome.empty() || apelido.empty() || vitorias.empty() || derrotas.empty() || sequencia.empty()) {
+        if(nome.empty() || apelido.empty() || vitorias.empty() || derrotas.empty() || sequencia.empty()) {
             continue;
         }
         Jogadores.createJogador(nome, apelido, stoi(vitorias), stoi(derrotas), stoi(sequencia));
