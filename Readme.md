@@ -4,7 +4,9 @@ Data de entrega: 23/JAN/2025
 
 # Desafios:
     - Organização dos Arquivos nas pastas e criação do Makefile:
-        "Makefile se mostra uma ferramenta poderosa, mas um pouco trabalhosa de criar. Após re-familiarizar com a sua sintaxe, passei a maior parte do tempo tentando realizar os comandos no terminal. Achei que teria que instalar o Ming de novo, mas na realidade era só usar "MinGW32-make" ao invés de "make" - um viva ao Windows!"
+        "Makefile se mostra uma ferramenta poderosa, mas um pouco trabalhosa de criar. Após re-familiarizar 
+        com a sua sintaxe, passei a maior parte do tempo tentando realizar os comandos no terminal. Achei 
+        que teria que instalar o Ming de novo, mas na realidade era só usar "MinGW32-make" ao invés de "make" - um viva ao Windows!"
     Davi
 # Escolhas de Implementação:
     - Arquivo .csv:
@@ -18,5 +20,7 @@ Data de entrega: 23/JAN/2025
         "Optei pelo vector para criar os usuários por causa do tamanho dinâmico do container. Acho que é um trade-off válido de memória e velocidade."
     Davi
     - Admin como UserManagement:
-        "Achei melhor segundo os fundamentos de encapsulamento e de responsabilidade deixar a classe Admin como a gerenciadora de Jogadores e Usuarios. Inicialmente, teríamos a feature de admin, que conseguiria alterar e ter permissões acima de Usuarios comuns, mas acho que não vai dar tempo."
+        "Achei melhor segundo os fundamentos de encapsulamento e de responsabilidade deixar a classe Admin 
+        como a gerenciadora de Jogadores e Usuarios. Inicialmente, teríamos a feature de admin, que conseguiria 
+        alterar e ter permissões acima de Usuarios comuns, mas acho que não vai dar tempo."
     Davi
