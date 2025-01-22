@@ -1,5 +1,5 @@
 CC=g++
-CFLAGS=-std=c++11 -Wall
+CFLAGS=-std=c++11 -Wall -no-pie
 SRC_DIR=src
 INCLUDE_DIR=include
 OBJ_DIR=obj
@@ -7,7 +7,8 @@ BIN_DIR=bin
 
 # Davi Santos Rodrigues
 all: main
-
+$(OBJ_DIR)/Partidas.o: $(INCLUDE_DIR)/Partidas.hpp $(SRC_DIR)/Partidas.cpp
+	$(CC) $(CFLAGS) -c $(SRC_DIR)/Partidas.cpp -I$(INCLUDE_DIR) -o $(OBJ_DIR)/Partidas.o
 $(OBJ_DIR)/Usuario.o: $(INCLUDE_DIR)/Usuario.hpp $(SRC_DIR)/Usuario.cpp
 	$(CC) $(CFLAGS) -c $(SRC_DIR)/Usuario.cpp -I$(INCLUDE_DIR) -o $(OBJ_DIR)/Usuario.o
 $(OBJ_DIR)/Admin.o: $(INCLUDE_DIR)/Admin.hpp $(SRC_DIR)/Admin.cpp
@@ -24,8 +25,12 @@ $(OBJ_DIR)/main.o: $(INCLUDE_DIR)/JogoVelha.hpp $(INCLUDE_DIR)/Ligue4.hpp $(INCL
                    $(INCLUDE_DIR)/Admin.hpp $(INCLUDE_DIR)/Jogador.hpp $(SRC_DIR)/main.cpp
 	$(CC) $(CFLAGS) -c $(SRC_DIR)/main.cpp -I$(INCLUDE_DIR) -o $(OBJ_DIR)/main.o
 main: $(OBJ_DIR)/main.o $(OBJ_DIR)/Ligue4.o $(OBJ_DIR)/JogoVelha.o $(OBJ_DIR)/Reversi.o \
-      $(OBJ_DIR)/Admin.o $(OBJ_DIR)/Jogador.o $(OBJ_DIR)/Usuario.o
+      $(OBJ_DIR)/Admin.o $(OBJ_DIR)/Jogador.o $(OBJ_DIR)/Usuario.o $(OBJ_DIR)/Partidas.o
 	$(CC) $(CFLAGS) -o $(BIN_DIR)/main $^
 
 clean:
+ifeq ($(OS),Windows_NT)
+	del /Q $(OBJ_DIR)\*.o $(BIN_DIR)\main.exe
+else
 	rm -f $(OBJ_DIR)/*.o $(BIN_DIR)/main
+endif
