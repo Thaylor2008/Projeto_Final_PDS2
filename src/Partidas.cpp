@@ -1,0 +1,9 @@
+#include "Partidas.hpp"
+#include <vector>
+#include <iostream>
+#include <iomanip>
+#include <algorithm>
+#include <string>
+#include <sstream>
+#include <fstream>
+#include <cmath>
