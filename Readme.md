@@ -10,7 +10,7 @@
 ```bash
    chmod +r tests/test1.csv
 ```
-    por exemplo.
+por exemplo.
 2. **Limpeza de arquivos gerados pelo Make**:  
    Execute o comando `make clean` adequado ao seu sistema operacional para evitar conflitos:  
     - **Windows**:  
