@@ -47,7 +47,21 @@ int main(int argc, char const *argv[]) {
         }else if(entrada == "RJ"){
             string apelido;
             cin >> apelido;
-            Jogadores.removerJogador(apelido);
+            try{
+                Jogadores.removerJogador(apelido);
+            } catch(const runtime_error& e){
+                 cerr << "ERRO: " << e.what() << endl;
+            }
+            
+        }else if(entrada == "CJ"){
+            string apelido, nome;
+            cin >> apelido >> nome;
+            try{
+                Jogadores.createJogador(apelido, nome);
+            }catch(const runtime_error& e){
+                cerr << "ERRO: " << e.what() << endl;
+            }
+            
         }
     }
     return 0;

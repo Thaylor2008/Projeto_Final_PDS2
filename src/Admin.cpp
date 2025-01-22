@@ -36,7 +36,10 @@ Admin::Admin(string arquivo) : arquivo("tests/" + arquivo) {
     }
     ip.close();
 }
-Jogador* Admin::createJogador(string nome, string apelido){
+Jogador* Admin::createJogador(string apelido, string nome) {
+    if (buscaApelido(apelido) != nullptr) {
+        throw runtime_error("jogador repetido");
+    }
     Jogadores.push_back(new Jogador(nome, apelido));
     return Jogadores.back();
 }
@@ -66,11 +69,13 @@ vector<Jogador*> Admin::removerJogador(string apelido){
         auto i = find_if(Jogadores.begin(), Jogadores.end(), [&](Jogador* jogador) {
         return jogador->getApelido() == apelido;
     });
-    if (i != Jogadores.end()) {
+    if (i == Jogadores.end()) {
+        throw runtime_error("jogador inexistente");
+    }
         cout << "Jogador " << (*i)->getApelido() << " removido com sucesso" << endl;
         delete *i;
         Jogadores.erase(i);
-    }
+    
         return Jogadores;
 }
 void Admin::uptadeJogadores(string arquivo){
