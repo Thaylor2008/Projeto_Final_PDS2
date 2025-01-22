@@ -8,24 +8,25 @@
 using namespace std;
 
 int main(int argc, char const *argv[]) {
-    Admin Jogadores;
-    string arquivo = "tests/test1.csv";
-    ifstream ip("tests/test1.csv");
-    string cabecalho;
-    getline(ip, cabecalho);
-    while(ip.good()){
-        string nome, apelido, vitorias, derrotas, sequencia;
-        getline(ip, nome, ',');
-        getline(ip, apelido, ',');
-        getline(ip, vitorias, ',');
-        getline(ip, derrotas, ',');
-        getline(ip, sequencia, '\n');
-        if(nome.empty() || apelido.empty() || vitorias.empty() || derrotas.empty() || sequencia.empty()) {
-            continue;
-        }
-        Jogadores.createJogador(nome, apelido, stoi(vitorias), stoi(derrotas), stoi(sequencia));
+    string arquivo;
+    int entrada;
+    cout << "Escolha seu arquivo(1-3):" << endl;
+    cin >> entrada;
+    switch (entrada){
+    case 1:
+        arquivo = "tests/test1.csv";
+        break;
+    
+    case 2:
+        arquivo = "tests/test2.csv";
+        break;
+    case 3:
+        arquivo = "tests/test3.csv";
+        break;
+    default:
+        arquivo = "tests/test1.csv";
     }
-    ip.close();
+    Admin Jogadores(arquivo);
     while(true){
         string entrada;
         cin >> entrada;
@@ -49,6 +50,5 @@ int main(int argc, char const *argv[]) {
             Jogadores.removerJogador(apelido);
         }
     }
-    //cout << "Vitorias Carlos: " << Jogador1->getVitorias() << endl;
     return 0;
 }

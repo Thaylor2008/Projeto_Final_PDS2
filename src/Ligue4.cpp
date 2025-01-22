@@ -40,7 +40,7 @@ bool Ligue4::verificaVencedor() const {
     return false;
 }
 
-void Ligue4::executarPartida(Usuario* jogador1, Usuario* jogador2) {
+void Ligue4::executarPartida(Jogador* jogador1, Jogador* jogador2) {
     char simboloJogador1 = 'X';
     char simboloJogador2 = 'O';
     bool turnoJogador1 = true;
@@ -60,11 +60,11 @@ void Ligue4::executarPartida(Usuario* jogador1, Usuario* jogador2) {
                 mostraTabuleiro();
                 cout << "Parabéns! " << (turnoJogador1 ? jogador1->getApelido() : jogador2->getApelido()) << " venceu!" << endl;
                 if (turnoJogador1) {
-                    jogador1->setVitorias(jogador1->getVitorias() + 1);
-                    jogador2->setDerrotas(jogador2->getDerrotas() + 1);
+                    jogador1->setVitVel(jogador1->getVitVel() + 1);
+                    jogador2->setDerVel(jogador2->getDerVel() + 1);
                 } else {
-                    jogador2->setVitorias(jogador2->getVitorias() + 1);
-                    jogador1->setDerrotas(jogador1->getDerrotas() + 1);
+                    jogador2->setVitVel(jogador2->getVitVel() + 1);
+                    jogador1->setDerRev(jogador1->getDerRev() + 1);
                 }
                 return;
             }
