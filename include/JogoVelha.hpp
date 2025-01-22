@@ -20,7 +20,7 @@ public:
 
     bool verificaVencedor() const override;
 
-    void executarPartida(Usuario* jogador1, Usuario* jogador2);
+    void executarPartida(Jogador* jogador1, Jogador* jogador2);
 
 private:
     bool tabuleiroCheio() const;
