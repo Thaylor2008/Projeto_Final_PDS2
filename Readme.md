@@ -6,7 +6,7 @@
 ## 📋 Informações Importantes
 
 1. **Permissões no Linux**:  
-   Certifique-se de permitir a leitura dos arquivos `.csv` ao compilar em um sistema Linux. Use o comando:  
+   Certifique-se de permitir a leitura dos arquivos `.csv` ao compilar em um sistema Linux. Por exemplo, use o comando:  
 ```bash
    chmod +r tests/test1.csv
 ```
@@ -16,7 +16,7 @@
 ```bash
      mingw32-make clean
 ```
-    - **Linux**:  
+   - **Linux**:  
 ```bash
      make clean
 ```
@@ -107,7 +107,7 @@
 ## 🤝 Contribuições
 
 - Desenvolvedor: **Davi Santos Rodrigues** e **Taylor**
-- Orientação: **Luiz**
+- Orientação: **Luiz Chaimowickz**
 ---
 ## 📝 Licença
 Este projeto é apenas para fins acadêmicos e de aprendizado.
