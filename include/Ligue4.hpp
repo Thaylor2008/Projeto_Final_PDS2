@@ -18,8 +18,6 @@ public:
     void atualizaTabuleiro(int linha, int coluna, char jogador) override;
 
     bool verificaVencedor() const override;
-
-    void executarPartida(Jogador* jogador1, Jogador* jogador2);
   
     bool posicaoValida(int linha, int coluna) const;
 
