@@ -30,7 +30,7 @@ main: $(OBJ_DIR)/main.o $(OBJ_DIR)/Ligue4.o $(OBJ_DIR)/JogoVelha.o $(OBJ_DIR)/Re
 
 clean:
 ifeq ($(OS),Windows_NT)
-	del /Q $(OBJ_DIR)\*.o $(BIN_DIR)\main.exe
+	del /Q $(OBJ_DIR)\*.o $(BIN_DIR)\main.exe $(BIN_DIR)\main
 else
-	rm -f $(OBJ_DIR)/*.o $(BIN_DIR)/main
+	rm -f $(OBJ_DIR)/*.o $(BIN_DIR)/main $(BIN_DIR)\main.exe
 endif

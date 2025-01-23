@@ -12,7 +12,7 @@ bool compareByORDEMFEALODERIT( Jogador* a,  Jogador *b)
 {
     return a->getApelido() < b->getApelido();
 }
-Admin::Admin(string arquivo) : arquivo("tests/" + arquivo) {
+Admin::Admin(string arquivo) : arquivo("database/" + arquivo) {
     ifstream ip(arquivo);
     if (!ip.is_open()) {
         cerr << "Erro ao abrir o arquivo: " << arquivo << endl;

@@ -5,6 +5,7 @@
 #include "Ligue4.hpp"
 #include "Jogador.hpp"
 #include "Admin.hpp"
+#include "Partidas.hpp"
 using namespace std;
 
 int main(int argc, char const *argv[]) {
@@ -14,17 +15,17 @@ int main(int argc, char const *argv[]) {
     cin >> entrada;
     switch (entrada){
     case 1:
-        arquivo = "tests/test1.csv";
+        arquivo = "database/test1.csv";
         break;
     
     case 2:
-        arquivo = "tests/test2.csv";
+        arquivo = "database/test2.csv";
         break;
     case 3:
-        arquivo = "tests/test3.csv";
+        arquivo = "database/test3.csv";
         break;
     default:
-        arquivo = "tests/test1.csv";
+        arquivo = "database/test1.csv";
     }
     Admin Jogadores(arquivo);
     while(true){
@@ -37,10 +38,8 @@ int main(int argc, char const *argv[]) {
             char jogo;
             string apelido1, apelido2;
             cin >> jogo >> apelido1 >> apelido2;
-            if(jogo == 'V'){
-                JogoVelha velha;
-                velha.executarPartida(Jogadores.buscaApelido(apelido1), Jogadores.buscaApelido(apelido2));
-            }
+            Partidas partida;
+            partida.executarPartida(jogo, Jogadores.buscaApelido(apelido1), Jogadores.buscaApelido(apelido2));
             
         }else if(entrada == "LJ"){
             Jogadores.listarUsuarios();

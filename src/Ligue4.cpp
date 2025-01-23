@@ -40,41 +40,6 @@ bool Ligue4::verificaVencedor() const {
     return false;
 }
 
-void Ligue4::executarPartida(Jogador* jogador1, Jogador* jogador2) {
-    char simboloJogador1 = 'X';
-    char simboloJogador2 = 'O';
-    bool turnoJogador1 = true;
-
-    while (true) {
-        mostraTabuleiro();
-        cout << "Turno de " << (turnoJogador1 ? jogador1->getApelido() : jogador2->getApelido())
-             << " (" << (turnoJogador1 ? simboloJogador1 : simboloJogador2) << "):" << endl;
-
-        int coluna;
-        cout << "Escolha uma coluna (0-6): ";
-        cin >> coluna;
-
-        if (testaJogada(0, coluna)) {
-            atualizaTabuleiro(0, coluna, turnoJogador1 ? simboloJogador1 : simboloJogador2);
-            if (verificaVencedor()) {
-                mostraTabuleiro();
-                cout << "Parabéns! " << (turnoJogador1 ? jogador1->getApelido() : jogador2->getApelido()) << " venceu!" << endl;
-                if (turnoJogador1) {
-                    jogador1->setVitVel(jogador1->getVitVel() + 1);
-                    jogador2->setDerVel(jogador2->getDerVel() + 1);
-                } else {
-                    jogador2->setVitVel(jogador2->getVitVel() + 1);
-                    jogador1->setDerRev(jogador1->getDerRev() + 1);
-                }
-                return;
-            }
-            turnoJogador1 = !turnoJogador1;
-        } else {
-            cout << "Jogada inválida. Tente novamente." << endl;
-        }
-    }
-}
-
 bool Ligue4::posicaoValida(int linha, int coluna) const {
     return linha >= 0 && linha < linhas && coluna >= 0 && coluna < colunas;
 }

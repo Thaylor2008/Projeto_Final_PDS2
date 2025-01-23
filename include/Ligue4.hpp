@@ -20,8 +20,6 @@ public:
     bool verificaVencedor() const override;
 
     void executarPartida(Jogador* jogador1, Jogador* jogador2);
-
-private:
   
     bool posicaoValida(int linha, int coluna) const;
 
