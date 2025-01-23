@@ -45,8 +45,6 @@ void Partidas::executarPartida(char jogo, Jogador* jogador1, Jogador* jogador2){
         } else {
             cout << "Jogada inválida. Tente novamente." << endl;
         }
-
-        // Empate ao encher o tabuleiro sem vencedor
         if (partida.tabuleiroCheio()) {
             partida.mostraTabuleiro();
             cout << "Empate! O jogo terminou sem vencedor." << endl;
@@ -54,7 +52,8 @@ void Partidas::executarPartida(char jogo, Jogador* jogador1, Jogador* jogador2){
         }
     }
     }else if(toupper(jogo) == 'R'){
-        //Reversi partida;
+    Reversi partida;
+    partida.mostraTabuleiro();
     }else if(toupper(jogo) == 'L'){
         Ligue4 partida;
         char simboloJogador1 = 'B';
