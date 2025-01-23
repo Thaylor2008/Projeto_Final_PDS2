@@ -106,7 +106,7 @@
 - Sistema Operacional: **Windows e Linux (WSL)**
 ## 🤝 Contribuições
 
-- Desenvolvedor: **Davi Santos Rodrigues** e **Taylor**
+- Desenvolvedores: **Davi Santos Rodrigues** e **Taylor**
 - Orientação: **Luiz Chaimowickz**
 ---
 ## 📝 Licença
