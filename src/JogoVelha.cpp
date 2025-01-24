@@ -18,13 +18,13 @@ void JogoVelha::mostraTabuleiro() const {
     }
 }
 
-bool JogoVelha::testaJogada(int linha, int coluna) const {
+bool JogoVelha::testaJogada(int linha, int coluna, char jogador){
     return linha >= 0 && linha < 3 && coluna >= 0 && coluna < 3 && tabuleiro[linha][coluna] == ' ';
 }
 
 // Atualiza o tabuleiro com a jogada do jogador
 void JogoVelha::atualizaTabuleiro(int linha, int coluna, char jogador) {
-    if (testaJogada(linha, coluna)) {
+    if (testaJogada(linha, coluna,' ')) {
         tabuleiro[linha][coluna] = jogador;
     } else {
         cout << "Erro: tentativa de atualizar com jogada invalida." << endl;

@@ -13,7 +13,7 @@ public:
 
     void mostraTabuleiro() const override;
     
-    bool testaJogada(int linha, int coluna) const override;
+    bool testaJogada(int linha, int coluna, char jogador) override;
 
     void atualizaTabuleiro(int linha, int coluna, char jogador) override;
 

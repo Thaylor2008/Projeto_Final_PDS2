@@ -26,7 +26,7 @@ void Partidas::executarPartida(char jogo, Jogador* jogador1, Jogador* jogador2){
         cin >> linha >> coluna;
         linha--;
         coluna--;
-        if (partida.testaJogada(linha, coluna)) {
+        if (partida.testaJogada(linha, coluna,' ')) {
             partida.atualizaTabuleiro(linha, coluna, turnoJogador1 ? simboloJogador1 : simboloJogador2);
             if (partida.verificaVencedor()) {
                 partida.mostraTabuleiro();
@@ -69,7 +69,7 @@ void Partidas::executarPartida(char jogo, Jogador* jogador1, Jogador* jogador2){
             cout << "Escolha uma coluna (0-6): ";
             cin >> coluna;
 
-            if (partida.testaJogada(0, coluna)) {
+            if (partida.testaJogada(0, coluna, ' ')) {
                 partida.atualizaTabuleiro(0, coluna, turnoJogador1 ? simboloJogador1 : simboloJogador2);
                 if (partida.verificaVencedor()) {
                     partida.mostraTabuleiro();

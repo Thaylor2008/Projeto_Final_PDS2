@@ -16,7 +16,7 @@ void Ligue4::mostraTabuleiro() const {
     cout << "  0   1   2   3   4   5   6  " << endl;
 }
 
-bool Ligue4::testaJogada(int linha, int coluna) const {
+bool Ligue4::testaJogada(int linha, int coluna, char jogador) {
     return coluna >= 0 && coluna < colunas && tabuleiro[0][coluna] == ' ';
 }
 
