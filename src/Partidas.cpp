@@ -10,6 +10,8 @@
 #include <cctype>
 using namespace std;
 void Partidas::executarPartida(char jogo, Jogador* jogador1, Jogador* jogador2){
+    if(jogador1 == nullptr || jogador2 == nullptr)
+    throw "jogador inexistente";
     if(toupper(jogo) == 'V'){
         JogoVelha partida;
         char simboloJogador1 = 'X';
@@ -78,9 +80,11 @@ void Partidas::executarPartida(char jogo, Jogador* jogador1, Jogador* jogador2){
     if(partida.getPontosB() < partida.getPontosP()){
         jogador1->setVitRev(jogador1->getVitRev() + 1);
         jogador2->setDerRev(jogador2->getDerRev() + 1);
+        cout << "Vitoria: " << jogador1->getApelido();
     }else if(partida.getPontosB() > partida.getPontosP()){
         jogador2->setVitRev(jogador2->getVitRev() + 1);
         jogador1->setDerRev(jogador1->getDerRev() + 1);
+        cout << "Vitoria: " << jogador2->getApelido();
     }else{
         cout << "Empatou ;-;";
     }
@@ -119,5 +123,7 @@ void Partidas::executarPartida(char jogo, Jogador* jogador1, Jogador* jogador2){
                 cout << "Jogada invalida. Tente novamente." << endl;
             }
         }
+    }else{
+        throw "dados incorretos";
     }
 }

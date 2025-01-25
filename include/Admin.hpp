@@ -12,7 +12,7 @@ class Admin{
     Jogador* createJogador(std::string, std::string);
     Jogador* createJogador(std::string, std::string, int, int, int, int, int, int, int);
     Jogador* buscaApelido(std::string);
-    void uptadeJogadores(std::string);
+    void uptadeJogadores();
     void listarUsuarios();
     std::vector<Jogador*> removerJogador(std::string);
     ~Admin();

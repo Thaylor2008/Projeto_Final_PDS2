@@ -6,13 +6,17 @@
 #include "Jogador.hpp"
 #include "Admin.hpp"
 #include "Partidas.hpp"
+#include <limits>
 using namespace std;
 
 int main(int argc, char const *argv[]) {
     string arquivo;
     int entrada;
-    cout << "Escolha seu arquivo(1-3):" << endl;
-    cin >> entrada;
+    while (std::cout << "Escolha seu arquivo(1-3):" << endl && !(std::cin >> entrada)) {
+    std::cin.clear(); //clear bad input flag
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); //discard input
+    std::cout << "Invalid input; please re-enter.\n";
+}
     switch (entrada){
     case 1:
         arquivo = "database/test1.csv";
@@ -33,14 +37,22 @@ int main(int argc, char const *argv[]) {
         cin >> entrada;
         if(entrada == "FS"){
             cout << "PROGRAMA FINALIZADO" << endl;
-            Jogadores.uptadeJogadores(arquivo);
+            Jogadores.uptadeJogadores();
             break;
         }else if(entrada == "EP"){
             char jogo;
             string apelido1, apelido2;
             cin >> jogo >> apelido1 >> apelido2;
             Partidas partida;
+            try{
             partida.executarPartida(jogo, Jogadores.buscaApelido(apelido1), Jogadores.buscaApelido(apelido2));
+            }catch(const char* Exc){
+                cout << "ERRO:" << Exc;
+                Jogadores.uptadeJogadores();
+            }catch(...){
+                cout << "Erro inesperado";
+                Jogadores.uptadeJogadores();
+            }
             
         }else if(entrada == "LJ"){
             cout << "lista de jogadores" << endl;

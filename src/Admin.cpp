@@ -12,7 +12,7 @@ bool compareByORDEMFEALODERIT( Jogador* a,  Jogador *b)
 {
     return a->getApelido() < b->getApelido();
 }
-Admin::Admin(string arquivo) : arquivo("database/" + arquivo) {
+Admin::Admin(string arquivo) : arquivo(arquivo) {
     ifstream ip(arquivo);
     if (!ip.is_open()) {
         cerr << "Erro ao abrir o arquivo: " << arquivo << endl;
@@ -78,7 +78,7 @@ vector<Jogador*> Admin::removerJogador(string apelido){
     
         return Jogadores;
 }
-void Admin::uptadeJogadores(string arquivo){
+void Admin::uptadeJogadores(){
     std::ofstream FILE;
     FILE.open(arquivo);
     FILE << "nome,apelido,vitVel,vitRev,vitLig,derVel,derRev,derLig,sequencia" << endl;
