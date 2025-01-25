@@ -52,8 +52,30 @@ void Partidas::executarPartida(char jogo, Jogador* jogador1, Jogador* jogador2){
         }
     }
     }else if(toupper(jogo) == 'R'){
-    Reversi partida;
+        Reversi partida;
+        char simboloJogador1 = 'X';
+        char simboloJogador2 = 'O';
+        bool turnoJogador1 = true;
+        while (!partida.verificaVencedor()) {
+            partida.mostraTabuleiro();
+            cout << "Turno de " << (turnoJogador1 ? jogador1 : jogador2)
+                << " (" << (turnoJogador1 ? simboloJogador1 : simboloJogador2) << "):" << endl;
+
+            int linha, coluna;
+            cout << "Digite linha e coluna (1-8): ";
+            cin >> linha >> coluna;
+            linha--;
+            coluna--;
+
+            if (partida.testaJogada(linha, coluna, turnoJogador1 ? simboloJogador1 : simboloJogador2)) {
+                partida.atualizaTabuleiro(linha, coluna, turnoJogador1 ? simboloJogador1 : simboloJogador2);
+                turnoJogador1 = !turnoJogador1;
+            } else {
+                cout << "Jogada inválida. Tente novamente." << endl;
+            }
+    }
     partida.mostraTabuleiro();
+    cout << "Fim de jogo!\n";
     }else if(toupper(jogo) == 'L'){
         Ligue4 partida;
         char simboloJogador1 = 'B';

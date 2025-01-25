@@ -68,36 +68,6 @@ bool Reversi::verificaVencedor() const {
 
     return countX == 0 || countO == 0 || (countX + countO == linhas * colunas);
 }
-
-// Executa uma partida de Reversi
-void Reversi::executarPartida(std::string jogador1, std::string jogador2) {
-    char simboloJogador1 = 'X';
-    char simboloJogador2 = 'O';
-    bool turnoJogador1 = true;
-
-    while (!verificaVencedor()) {
-        mostraTabuleiro();
-        cout << "Turno de " << (turnoJogador1 ? jogador1 : jogador2)
-             << " (" << (turnoJogador1 ? simboloJogador1 : simboloJogador2) << "):" << endl;
-
-        int linha, coluna;
-        cout << "Digite linha e coluna (1-8): ";
-        cin >> linha >> coluna;
-        linha--;
-        coluna--;
-
-        if (testaJogada(linha, coluna, turnoJogador1 ? simboloJogador1 : simboloJogador2)) {
-            atualizaTabuleiro(linha, coluna, turnoJogador1 ? simboloJogador1 : simboloJogador2);
-            turnoJogador1 = !turnoJogador1;
-        } else {
-            cout << "Jogada inválida. Tente novamente." << endl;
-        }
-    }
-
-    mostraTabuleiro();
-    cout << "Fim de jogo!\n";
-}
-
 // Verifica se uma posição no tabuleiro é válida
 bool Reversi::posicaoValida(int linha, int coluna) const {
     return linha >= 0 && linha < linhas && coluna >= 0 && coluna < colunas;
@@ -121,7 +91,7 @@ void Reversi::inverterPecas(int linha, int coluna, char jogador) {
 
 // Verifica se há peças para inverter em uma direção
 bool Reversi::verificaDirecao(int linha, int coluna, int dirLinha, int dirColuna, char jogador) const {
-    char adversario = (jogador == 'X') ? 'O' : 'X';
+    //char adversario = (jogador == 'X') ? 'O' : 'X';
     int i = linha + dirLinha, j = coluna + dirColuna;
 
     bool encontrouAdversario = false;

@@ -38,7 +38,6 @@ int main(int argc, char const *argv[]) {
         }else if(entrada == "EP"){
             char jogo;
             string apelido1, apelido2;
-            cout << "Escolha o JOGO (v|L|R),e coloque os apelidos:" << endl;
             cin >> jogo >> apelido1 >> apelido2;
             Partidas partida;
             partida.executarPartida(jogo, Jogadores.buscaApelido(apelido1), Jogadores.buscaApelido(apelido2));
@@ -47,7 +46,6 @@ int main(int argc, char const *argv[]) {
             cout << "lista de jogadores" << endl;
             Jogadores.listarUsuarios();
         }else if(entrada == "RJ"){
-            cout << "Digite o apelido do jogador a ser removido" << endl;
             string apelido;
             cin >> apelido;
             try{
@@ -58,7 +56,6 @@ int main(int argc, char const *argv[]) {
             
         }else if(entrada == "CJ"){
             string apelido, nome;
-            cout << "Digite o apelido e o nome do jogador as ser cadastrado:" << endl;
             cin >> apelido >> nome;
             try{
                 Jogadores.createJogador(apelido, nome);
