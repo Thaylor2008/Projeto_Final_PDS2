@@ -32,7 +32,7 @@ void JogoVelha::atualizaTabuleiro(int linha, int coluna, char jogador) {
 }
 
 // Verifica se há um vencedor
-bool JogoVelha::verificaVencedor() const {
+bool JogoVelha::verificaVencedor() {
     for (int i = 0; i < 3; ++i) {
         if (tabuleiro[i][0] != ' ' && tabuleiro[i][0] == tabuleiro[i][1] && tabuleiro[i][1] == tabuleiro[i][2]) {
             return true; 

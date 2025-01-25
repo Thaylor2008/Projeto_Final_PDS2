@@ -18,7 +18,7 @@ public:
 
     void atualizaTabuleiro(int linha, int coluna, char jogador) override;
 
-    bool verificaVencedor() const override;
+    bool verificaVencedor() override;
 
     bool tabuleiroCheio() const;
 };

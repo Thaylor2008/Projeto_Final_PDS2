@@ -43,7 +43,7 @@ void Partidas::executarPartida(char jogo, Jogador* jogador1, Jogador* jogador2){
             turnoJogador1 = !turnoJogador1;
             ++jogadas;
         } else {
-            cout << "Jogada inválida. Tente novamente." << endl;
+            cout << "Jogada invalida. Tente novamente." << endl;
         }
         if (partida.tabuleiroCheio()) {
             partida.mostraTabuleiro();
@@ -58,7 +58,7 @@ void Partidas::executarPartida(char jogo, Jogador* jogador1, Jogador* jogador2){
         bool turnoJogador1 = true;
         while (!partida.verificaVencedor()) {
             partida.mostraTabuleiro();
-            cout << "Turno de " << (turnoJogador1 ? jogador1 : jogador2)
+            cout << "Turno de " << (turnoJogador1 ? jogador1->getApelido() : jogador2->getApelido())
                 << " (" << (turnoJogador1 ? simboloJogador1 : simboloJogador2) << "):" << endl;
 
             int linha, coluna;
@@ -71,15 +71,24 @@ void Partidas::executarPartida(char jogo, Jogador* jogador1, Jogador* jogador2){
                 partida.atualizaTabuleiro(linha, coluna, turnoJogador1 ? simboloJogador1 : simboloJogador2);
                 turnoJogador1 = !turnoJogador1;
             } else {
-                cout << "Jogada inválida. Tente novamente." << endl;
+                cout << "Jogada invalida. Tente novamente." << endl;
             }
     }
     partida.mostraTabuleiro();
+    if(partida.getPontosB() < partida.getPontosP()){
+        jogador1->setVitRev(jogador1->getVitRev() + 1);
+        jogador2->setDerRev(jogador2->getDerRev() + 1);
+    }else if(partida.getPontosB() > partida.getPontosP()){
+        jogador2->setVitRev(jogador2->getVitRev() + 1);
+        jogador1->setDerRev(jogador1->getDerRev() + 1);
+    }else{
+        cout << "Empatou ;-;";
+    }
     cout << "Fim de jogo!\n";
     }else if(toupper(jogo) == 'L'){
         Ligue4 partida;
-        char simboloJogador1 = 'B';
-        char simboloJogador2 = 'R';
+        char simboloJogador1 = 'X';
+        char simboloJogador2 = 'O';
         bool turnoJogador1 = true;
 
         while (true) {
@@ -95,7 +104,7 @@ void Partidas::executarPartida(char jogo, Jogador* jogador1, Jogador* jogador2){
                 partida.atualizaTabuleiro(0, coluna, turnoJogador1 ? simboloJogador1 : simboloJogador2);
                 if (partida.verificaVencedor()) {
                     partida.mostraTabuleiro();
-                    cout << "Parabéns! " << (turnoJogador1 ? jogador1->getApelido() : jogador2->getApelido()) << " venceu!" << endl;
+                    cout << "Parabens! " << (turnoJogador1 ? jogador1->getApelido() : jogador2->getApelido()) << " venceu!" << endl;
                     if (turnoJogador1) {
                         jogador1->setVitLig(jogador1->getVitVel() + 1);
                         jogador2->setDerLig(jogador2->getDerVel() + 1);
@@ -107,7 +116,7 @@ void Partidas::executarPartida(char jogo, Jogador* jogador1, Jogador* jogador2){
                 }
                 turnoJogador1 = !turnoJogador1;
             } else {
-                cout << "Jogada inválida. Tente novamente." << endl;
+                cout << "Jogada invalida. Tente novamente." << endl;
             }
         }
     }

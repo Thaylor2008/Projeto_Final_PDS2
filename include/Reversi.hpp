@@ -5,6 +5,8 @@
 #include <vector>
 
 class Reversi : public JogosTab {
+private:
+    int pontosP, pontosB;
 public:
 
     Reversi();
@@ -15,9 +17,12 @@ public:
 
     void atualizaTabuleiro(int linha, int coluna, char jogador) override;
 
-    bool verificaVencedor() const override;
+    bool verificaVencedor() override;
 
-    void executarPartida(std::string jogador1, std::string jogador2);
+    void setPontosB(int num);
+    void setPontosP(int num);
+    int getPontosB();
+    int getPontosP();
 
 private:
    

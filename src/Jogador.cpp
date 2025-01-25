@@ -35,14 +35,12 @@ int Jogador::getDerLig(){
     return derLig;
 }
 void Jogador::setVitVel(int vitVel) {
-    cout << "entrou! vitorias velha" << endl;
     this->vitVel = vitVel;
 }
 void Jogador::setVitRev(int vitRev) {
     this->vitRev = vitRev;
 }
 void Jogador::setVitLig(int vitLig) {
-    cout << "entrou vitorias lig" << endl;
     this->vitLig = vitLig;
 }
 void Jogador::setDerVel(int derVel) {
@@ -54,6 +52,5 @@ void Jogador::setDerRev(int derRev) {
     this->derRev = derRev;
 }
 void Jogador::setDerLig(int derLig) {
-    cout << "entrou derrotas lig" << endl;
     this->derLig = derLig;
 }

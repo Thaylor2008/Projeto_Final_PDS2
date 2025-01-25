@@ -19,7 +19,7 @@ void Reversi::mostraTabuleiro() const {
         }
         cout << endl;
     }
-    cout << "  1   2   3   4   5   6   7   8" << endl;
+    cout << "   1   2   3   4   5   6   7   8" << endl;
 }
 
 // Testa se uma jogada é válida
@@ -56,7 +56,7 @@ void Reversi::atualizaTabuleiro(int linha, int coluna, char jogador) {
 }
 
 // Verifica se há um vencedor
-bool Reversi::verificaVencedor() const {
+bool Reversi::verificaVencedor() {
     int countX = 0, countO = 0;
 
     for (const auto& linha : tabuleiro) {
@@ -65,8 +65,10 @@ bool Reversi::verificaVencedor() const {
             if (celula == 'O') ++countO;
         }
     }
-
+    setPontosP(countX);
+    setPontosB(countO);
     return countX == 0 || countO == 0 || (countX + countO == linhas * colunas);
+    
 }
 // Verifica se uma posição no tabuleiro é válida
 bool Reversi::posicaoValida(int linha, int coluna) const {
@@ -106,4 +108,16 @@ bool Reversi::verificaDirecao(int linha, int coluna, int dirLinha, int dirColuna
     }
 
     return false;
+}
+void Reversi::setPontosB(int num){
+    this->pontosB = num;
+}
+void Reversi::setPontosP(int num){
+    this->pontosP = num;
+}
+int Reversi::getPontosB(){
+    return pontosB;
+}
+int Reversi::getPontosP(){
+    return pontosP;
 }

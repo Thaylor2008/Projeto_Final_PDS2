@@ -20,7 +20,7 @@ public:
     virtual void mostraTabuleiro() const = 0;
     virtual bool testaJogada(int linha, int coluna, char jogador) = 0;
     virtual void atualizaTabuleiro(int linha, int coluna, char jogador) = 0;
-    virtual bool verificaVencedor() const = 0;
+    virtual bool verificaVencedor() = 0;
     
     virtual void resetaTabuleiro() {
         for (auto& linha : tabuleiro) {
