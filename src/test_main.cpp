@@ -3,14 +3,14 @@
 #include "Admin.hpp"
 #include "Partidas.hpp"
 
-TEST_CASE(){
+TEST_CASE("Teste Remove Jogador"){
     
     Admin Jogadores("database/testbase.csv");
     CHECK(Jogadores.createJogador("apelido1", "Jogador1"));
     Jogadores.removerJogador("apelido1");
     CHECK(Jogadores.buscaApelido("apelido1") == nullptr);
 }
-TEST_CASE(){
+TEST_CASE("Teste cria jogador"){
     std::cout << "Cadastrar Jogador";
     Admin Jogadores("database/testbase.csv");
     CHECK(Jogadores.createJogador("apelido1", "Jogador1"));

@@ -28,6 +28,14 @@ main: $(OBJ_DIR)/main.o $(OBJ_DIR)/Ligue4.o $(OBJ_DIR)/JogoVelha.o $(OBJ_DIR)/Re
       $(OBJ_DIR)/Admin.o $(OBJ_DIR)/Jogador.o $(OBJ_DIR)/Usuario.o $(OBJ_DIR)/Partidas.o
 	$(CC) $(CFLAGS) -o $(BIN_DIR)/main $^
 
+$(OBJ_DIR)/test_main.o: $(SRC_DIR)/test_main.cpp
+	$(CC) $(CFLAGS) -c $(SRC_DIR)/test_main.cpp -I$(INCLUDE_DIR) -o $(OBJ_DIR)/test_main.o
+tests: $(OBJ_DIR)/test_main.o $(OBJ_DIR)/Ligue4.o $(OBJ_DIR)/JogoVelha.o $(OBJ_DIR)/Reversi.o \
+       $(OBJ_DIR)/Admin.o $(OBJ_DIR)/Jogador.o $(OBJ_DIR)/Usuario.o $(OBJ_DIR)/Partidas.o
+	$(CC) $(CFLAGS) -o $(BIN_DIR)/tests $^
+run-tests: tests
+	$(BIN_DIR)/tests
+
 clean:
 ifeq ($(OS),Windows_NT)
 	del /Q $(OBJ_DIR)\*.o $(BIN_DIR)\main.exe $(BIN_DIR)\main
