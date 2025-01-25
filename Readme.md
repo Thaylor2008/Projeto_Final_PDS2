@@ -96,7 +96,15 @@
 ```bash
      make clean
 ```
-
+4. **DOCTEST**:
+   - Windows:
+```bash
+   minGW32-make run-tests
+```
+   - Linux:
+```bash
+   make run-tests
+```
 ---
 ## 🛠️ Tecnologias Utilizadas
 
@@ -110,4 +118,4 @@
 - Orientação: **Luiz Chaimowickz**
 ---
 ## 📝 Licença
-Este projeto é apenas para fins acadêmicos e de aprendizado.
+Este projeto é pedagógico.
