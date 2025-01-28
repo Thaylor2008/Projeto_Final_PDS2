@@ -56,6 +56,8 @@ int main(int argc, char const *argv[]) {
             }
             
         }else if(entrada == "LJ"){
+            string ajn;
+            cin >> ajn;
             cout << "lista de jogadores" << endl;
             Jogadores.listarUsuarios();
         }else if(entrada == "RJ"){
