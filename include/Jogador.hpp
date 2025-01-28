@@ -8,6 +8,8 @@ class Jogador : public Usuario{
     public:
     Jogador(std::string nome, std::string apelido);
     Jogador(std::string nome, std::string apelido, int, int, int, int, int, int, int);
+    Jogador(const Jogador& outro);
+    Jogador& operator=(const Jogador& outro);
     int getVitVel();
     int getVitRev();
     int getVitLig();

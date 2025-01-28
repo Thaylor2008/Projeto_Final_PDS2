@@ -54,3 +54,18 @@ void Jogador::setDerRev(int derRev) {
 void Jogador::setDerLig(int derLig) {
     this->derLig = derLig;
 }
+Jogador::Jogador(const Jogador& outro)
+    : Usuario(outro), vitVel(outro.vitVel), vitRev(outro.vitRev), vitLig(outro.vitLig),
+      derVel(outro.derVel), derRev(outro.derRev), derLig(outro.derLig) {}
+Jogador& Jogador::operator=(const Jogador& outro) {
+    if (this != &outro) {
+        Usuario::operator=(outro);
+        vitVel = outro.vitVel;
+        vitRev = outro.vitRev;
+        vitLig = outro.vitLig;
+        derVel = outro.derVel;
+        derRev = outro.derRev;
+        derLig = outro.derLig;
+    }
+    return *this;
+}
