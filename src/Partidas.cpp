@@ -7,6 +7,7 @@
 #include <sstream>
 #include <fstream>
 #include <cmath>
+#include <limits>
 #include <cctype>
 using namespace std;
 void Partidas::executarPartida(char jogo, Jogador* jogador1, Jogador* jogador2){
@@ -25,7 +26,21 @@ void Partidas::executarPartida(char jogo, Jogador* jogador1, Jogador* jogador2){
 
         int linha, coluna;
         cout << "Digite linha e coluna (1-3): ";
-        cin >> linha >> coluna;
+        try{
+           cin >> linha >> coluna;
+           if(!cin){
+            throw invalid_argument("formato incorreto");
+           }
+        }catch(invalid_argument& e){
+            cerr << "ERRO: " << e.what() << endl;
+            std::cin.clear(); //clear bad input flag
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); //discard input
+            while(!(cin >> linha >> coluna)){
+                std::cin.clear(); //clear bad input flag
+                std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); //discard input
+                cout << "ERRO: formato incorreto" << endl;
+            }
+        }
         linha--;
         coluna--;
         if (partida.testaJogada(linha, coluna,' ')) {
@@ -45,7 +60,7 @@ void Partidas::executarPartida(char jogo, Jogador* jogador1, Jogador* jogador2){
             turnoJogador1 = !turnoJogador1;
             ++jogadas;
         } else {
-            cout << "Jogada invalida. Tente novamente." << endl;
+            cout << "ERRO: jogada invalida" << endl;
         }
         if (partida.tabuleiroCheio()) {
             partida.mostraTabuleiro();
@@ -65,7 +80,21 @@ void Partidas::executarPartida(char jogo, Jogador* jogador1, Jogador* jogador2){
 
             int linha, coluna;
             cout << "Digite linha e coluna (1-8): ";
-            cin >> linha >> coluna;
+            try{
+                cin >> linha >> coluna;
+                if(!cin){
+                throw invalid_argument("formato incorreto");
+                }
+            }catch(invalid_argument& e){
+                cerr << "ERRO: " << e.what() << endl;
+                std::cin.clear(); //clear bad input flag
+                std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); //discard input
+                while(!(cin >> linha >> coluna)){
+                    std::cin.clear(); //clear bad input flag
+                    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); //discard input
+                    cout << "ERRO: formato incorreto" << endl;
+                }
+            }
             linha--;
             coluna--;
 
@@ -73,7 +102,7 @@ void Partidas::executarPartida(char jogo, Jogador* jogador1, Jogador* jogador2){
                 partida.atualizaTabuleiro(linha, coluna, turnoJogador1 ? simboloJogador1 : simboloJogador2);
                 turnoJogador1 = !turnoJogador1;
             } else {
-                cout << "Jogada invalida. Tente novamente." << endl;
+                cout << "ERRO: jogada invalida" << endl;
             }
     }
     partida.mostraTabuleiro();
@@ -102,7 +131,21 @@ void Partidas::executarPartida(char jogo, Jogador* jogador1, Jogador* jogador2){
 
             int coluna;
             cout << "Escolha uma coluna (0-6): ";
-            cin >> coluna;
+            try{
+           cin >> coluna;
+           if(!cin){
+                throw invalid_argument("formato incorreto");
+           }
+            }catch(invalid_argument& e){
+                cerr << "ERRO: " << e.what() << endl;
+                std::cin.clear(); //clear bad input flag
+                std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); //discard input
+                while(!(cin >> linha >> coluna)){
+                    std::cin.clear(); //clear bad input flag
+                    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); //discard input
+                    cout << "ERRO: formato incorreto" << endl;
+                }
+            }
 
             if (partida.testaJogada(0, coluna, ' ')) {
                 partida.atualizaTabuleiro(0, coluna, turnoJogador1 ? simboloJogador1 : simboloJogador2);
@@ -120,7 +163,7 @@ void Partidas::executarPartida(char jogo, Jogador* jogador1, Jogador* jogador2){
                 }
                 turnoJogador1 = !turnoJogador1;
             } else {
-                cout << "Jogada invalida. Tente novamente." << endl;
+                cout << "ERRO: jogada invalida" << endl;
             }
         }
     }else{

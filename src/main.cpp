@@ -15,7 +15,7 @@ int main(int argc, char const *argv[]) {
     while (std::cout << "Escolha seu arquivo(1-3):" << endl && !(std::cin >> entrada)) {
     std::cin.clear(); //clear bad input flag
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); //discard input
-    std::cout << "Invalid input; please re-enter.\n";
+    std::cout << "Formato invalido\n";
 }
     switch (entrada){
     case 1:
@@ -29,6 +29,7 @@ int main(int argc, char const *argv[]) {
         arquivo = "database/test3.csv";
         break;
     default:
+        cout << "Arquivo 1 escolhido" << endl;
         arquivo = "database/test1.csv";
     }
     Admin Jogadores(arquivo);
