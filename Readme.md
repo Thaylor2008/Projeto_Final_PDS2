@@ -33,7 +33,7 @@
 — *Davi Santos Rodrigues*  
 
 ### Tratamento de Exceções
-*"Tentar abordar todos os erros possíveis se mostra um dos maiores desafios de toda a implementação. Acredito que fomos competentes e que conseguimos deixar o código bem robusto no final"*
+*"Tentar abordar todos os erros possíveis se mostra um dos maiores desafios de toda a implementação. Acredito que fomos competentes e que conseguimos deixar o código bem robusto no final."*
 - *Davi Santos Rodrigues*
 
 ---
