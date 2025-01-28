@@ -32,6 +32,10 @@
 *"Algumas vezes dá um nó na cabeça: 'Como diabos eu vou acessar esse método privado da classe abstrata dentro da classe que está referenciando uma das classes filhas!'. Mas, com debugging e paciência, o trem anda."*  
 — *Davi Santos Rodrigues*  
 
+### Tratamento de Exceções
+*"Tentar abordar todos os erros possíveis se mostra um dos maiores desafios de toda a implementação. Acredito que fomos competentes e que conseguimos deixar o código bem robusto no final"*
+- *Davi Santos Rodrigues*
+
 ---
 ## 💡 Escolhas de Implementação
 
