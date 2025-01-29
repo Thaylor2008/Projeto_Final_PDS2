@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Jogos de Tabuleiro: Código-Fonte de C:/Users/thayl/OneDrive/Área de Trabalho/Projeto_Final_PDS2/src/Jogador.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Jogos de Tabuleiro<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">O Projeto de Jogos de Tabuleiro é uma plataforma desenvolvida em linguagem C++ com o objetivo de realizar um sistema unificado e modular de jogos clássicos, como Reversi, conhecido também como Othello, Lig4 e o Jogo da Velha.</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_56d0f47407587960cd8030364c96746b.html">Projeto_Final_PDS2</a></li><li class="navelem"><a class="el" href="dir_fe61ff3a618479e2bb8f9e4663b72abd.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">Jogador.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_jogador_8cpp.html">Ir para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="_jogador_8hpp.html">Jogador.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;iomanip&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;sstream&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;fstream&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;cmath&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><a class="code hl_function" href="class_jogador.html#a0a94e8a1bc777aaf062f866de53c7ebf">Jogador::Jogador</a>(<span class="keywordtype">string</span> nome, <span class="keywordtype">string</span> apelido) : <a class="code hl_class" href="class_usuario.html">Usuario</a>(nome, apelido), vitVel(0), vitRev(0), vitLig(0),</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>derVel(0), derRev(0), derLig(0) {}</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><a class="code hl_function" href="class_jogador.html#a0a94e8a1bc777aaf062f866de53c7ebf">Jogador::Jogador</a>(std::string nome, std::string apelido, <span class="keywordtype">int</span> vitVel, <span class="keywordtype">int</span> vitRev, <span class="keywordtype">int</span> vitLig, <span class="keywordtype">int</span> derVel, </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keywordtype">int</span> derRev, <span class="keywordtype">int</span> derLig, <span class="keywordtype">int</span> seq) : <a class="code hl_class" href="class_usuario.html">Usuario</a>(nome, apelido, (vitLig + vitRev + vitVel), (derLig + derRev + derVel),</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>seq), vitVel(vitVel), vitRev(vitRev), vitLig(vitLig), derVel(derVel), derRev(derRev), derLig(derLig) {}</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span></div>
+<div class="foldopen" id="foldopen00041" data-start="{" data-end="}">
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="class_jogador.html#aa91b6b4737fa1e7fa3f38ab3531eee5d">   41</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_jogador.html#aa91b6b4737fa1e7fa3f38ab3531eee5d">Jogador::mostrarTabela</a>() {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    cout &lt;&lt; <span class="stringliteral">&quot;Tabela!&quot;</span>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>}</div>
+</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span></div>
+<div class="foldopen" id="foldopen00050" data-start="{" data-end="}">
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_jogador.html#a3577feb380bd4c3318c08628cef254df">   50</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="class_jogador.html#a3577feb380bd4c3318c08628cef254df">Jogador::getVitVel</a>() {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordflow">return</span> vitVel;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}</div>
+</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span></div>
+<div class="foldopen" id="foldopen00059" data-start="{" data-end="}">
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_jogador.html#afeda6a8f49aeb5a557a5b58de6ee6833">   59</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="class_jogador.html#afeda6a8f49aeb5a557a5b58de6ee6833">Jogador::getVitRev</a>() {</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordflow">return</span> vitRev;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
+</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span></div>
+<div class="foldopen" id="foldopen00068" data-start="{" data-end="}">
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="class_jogador.html#abc5b9de95f846ffee2a7d5b21871e020">   68</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="class_jogador.html#abc5b9de95f846ffee2a7d5b21871e020">Jogador::getVitLig</a>() {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordflow">return</span> vitLig;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>}</div>
+</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span></div>
+<div class="foldopen" id="foldopen00077" data-start="{" data-end="}">
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="class_jogador.html#aaee0500df56bdf28ecff5b887bc2bae6">   77</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="class_jogador.html#aaee0500df56bdf28ecff5b887bc2bae6">Jogador::getDerVel</a>() {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordflow">return</span> derVel;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>}</div>
+</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span></div>
+<div class="foldopen" id="foldopen00086" data-start="{" data-end="}">
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="class_jogador.html#a10d1d1c52c53d00dd75819cfa6078c3c">   86</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="class_jogador.html#a10d1d1c52c53d00dd75819cfa6078c3c">Jogador::getDerRev</a>() {</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keywordflow">return</span> derRev;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>}</div>
+</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span></div>
+<div class="foldopen" id="foldopen00095" data-start="{" data-end="}">
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="class_jogador.html#ab1f786b84599a4e8e69303941e3e1716">   95</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="class_jogador.html#ab1f786b84599a4e8e69303941e3e1716">Jogador::getDerLig</a>() {</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordflow">return</span> derLig;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>}</div>
+</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span></div>
+<div class="foldopen" id="foldopen00104" data-start="{" data-end="}">
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="class_jogador.html#aa79789c5ab3852ac007d4d611d0c2576">  104</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_jogador.html#aa79789c5ab3852ac007d4d611d0c2576">Jogador::setVitVel</a>(<span class="keywordtype">int</span> vitVel) {</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    this-&gt;vitVel = vitVel;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>}</div>
+</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span></div>
+<div class="foldopen" id="foldopen00113" data-start="{" data-end="}">
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="class_jogador.html#ad1171e51cc7ddd649d99bfaa8cdc405e">  113</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_jogador.html#ad1171e51cc7ddd649d99bfaa8cdc405e">Jogador::setVitRev</a>(<span class="keywordtype">int</span> vitRev) {</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    this-&gt;vitRev = vitRev;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>}</div>
+</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span></div>
+<div class="foldopen" id="foldopen00122" data-start="{" data-end="}">
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="class_jogador.html#a759bb7ee2a5148baf083ddc3542c4bdb">  122</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_jogador.html#a759bb7ee2a5148baf083ddc3542c4bdb">Jogador::setVitLig</a>(<span class="keywordtype">int</span> vitLig) {</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    this-&gt;vitLig = vitLig;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>}</div>
+</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span></div>
+<div class="foldopen" id="foldopen00131" data-start="{" data-end="}">
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="class_jogador.html#ae5601c2716deaee9333a98fb7ed4f6e8">  131</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_jogador.html#ae5601c2716deaee9333a98fb7ed4f6e8">Jogador::setDerVel</a>(<span class="keywordtype">int</span> derVel) {</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    this-&gt;derVel = derVel;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>}</div>
+</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span></div>
+<div class="foldopen" id="foldopen00140" data-start="{" data-end="}">
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno"><a class="line" href="class_jogador.html#af3bdbaa3991abcd31570293c1bcd05d9">  140</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_jogador.html#af3bdbaa3991abcd31570293c1bcd05d9">Jogador::setDerRev</a>(<span class="keywordtype">int</span> derRev) {</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    this-&gt;derRev = derRev;</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>}</div>
+</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span></div>
+<div class="foldopen" id="foldopen00149" data-start="{" data-end="}">
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno"><a class="line" href="class_jogador.html#a1069afdd9268ee00d424e5901a986679">  149</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_jogador.html#a1069afdd9268ee00d424e5901a986679">Jogador::setDerLig</a>(<span class="keywordtype">int</span> derLig) {</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    this-&gt;derLig = derLig;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>}</div>
+</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span></div>
+<div class="foldopen" id="foldopen00158" data-start="{" data-end="}">
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="class_jogador.html#a6a80e71c5e3cfa6aa3ce91d6a93552d2">  158</a></span><a class="code hl_function" href="class_jogador.html#a0a94e8a1bc777aaf062f866de53c7ebf">Jogador::Jogador</a>(<span class="keyword">const</span> <a class="code hl_function" href="class_jogador.html#a0a94e8a1bc777aaf062f866de53c7ebf">Jogador</a>&amp; outro)</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    : <a class="code hl_function" href="class_usuario.html#a0a7f06f65a60dd3bf56e29814b912e28">Usuario</a>(outro), vitVel(outro.vitVel), vitRev(outro.vitRev), vitLig(outro.vitLig),</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>      derVel(outro.derVel), derRev(outro.derRev), derLig(outro.derLig) {}</div>
+</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span></div>
+<div class="foldopen" id="foldopen00168" data-start="{" data-end="}">
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno"><a class="line" href="class_jogador.html#a68c52eca98b59f051199b69113dfbe74">  168</a></span><a class="code hl_function" href="class_jogador.html#a0a94e8a1bc777aaf062f866de53c7ebf">Jogador</a>&amp; <a class="code hl_function" href="class_jogador.html#a68c52eca98b59f051199b69113dfbe74">Jogador::operator=</a>(<span class="keyword">const</span> <a class="code hl_function" href="class_jogador.html#a0a94e8a1bc777aaf062f866de53c7ebf">Jogador</a>&amp; outro) {</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    <span class="keywordflow">if</span> (<span class="keyword">this</span> != &amp;outro) {</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>        Usuario::operator=(outro);  <span class="comment">// Copia os dados da classe base</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        vitVel = outro.vitVel;</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        vitRev = outro.vitRev;</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        vitLig = outro.vitLig;</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        derVel = outro.derVel;</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>        derRev = outro.derRev;</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>        derLig = outro.derLig;</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    }</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>}</div>
+</div>
+<div class="ttc" id="a_jogador_8hpp_html"><div class="ttname"><a href="_jogador_8hpp.html">Jogador.hpp</a></div></div>
+<div class="ttc" id="aclass_jogador_html_a0a94e8a1bc777aaf062f866de53c7ebf"><div class="ttname"><a href="class_jogador.html#a0a94e8a1bc777aaf062f866de53c7ebf">Jogador::Jogador</a></div><div class="ttdeci">Jogador(std::string nome, std::string apelido)</div><div class="ttdoc">Construtor para inicializar um jogador com nome e apelido.</div></div>
+<div class="ttc" id="aclass_jogador_html_a1069afdd9268ee00d424e5901a986679"><div class="ttname"><a href="class_jogador.html#a1069afdd9268ee00d424e5901a986679">Jogador::setDerLig</a></div><div class="ttdeci">void setDerLig(int derLig)</div><div class="ttdoc">Define o número de derrotas em partidas de ligação.</div><div class="ttdef"><b>Definição</b> <a href="#l00149">Jogador.cpp:149</a></div></div>
+<div class="ttc" id="aclass_jogador_html_a10d1d1c52c53d00dd75819cfa6078c3c"><div class="ttname"><a href="class_jogador.html#a10d1d1c52c53d00dd75819cfa6078c3c">Jogador::getDerRev</a></div><div class="ttdeci">int getDerRev()</div><div class="ttdoc">Obtém o número de derrotas em partidas de reversão.</div><div class="ttdef"><b>Definição</b> <a href="#l00086">Jogador.cpp:86</a></div></div>
+<div class="ttc" id="aclass_jogador_html_a3577feb380bd4c3318c08628cef254df"><div class="ttname"><a href="class_jogador.html#a3577feb380bd4c3318c08628cef254df">Jogador::getVitVel</a></div><div class="ttdeci">int getVitVel()</div><div class="ttdoc">Obtém o número de vitórias em partidas de velocidade.</div><div class="ttdef"><b>Definição</b> <a href="#l00050">Jogador.cpp:50</a></div></div>
+<div class="ttc" id="aclass_jogador_html_a68c52eca98b59f051199b69113dfbe74"><div class="ttname"><a href="class_jogador.html#a68c52eca98b59f051199b69113dfbe74">Jogador::operator=</a></div><div class="ttdeci">Jogador &amp; operator=(const Jogador &amp;outro)</div><div class="ttdoc">Operador de atribuição.</div><div class="ttdef"><b>Definição</b> <a href="#l00168">Jogador.cpp:168</a></div></div>
+<div class="ttc" id="aclass_jogador_html_a759bb7ee2a5148baf083ddc3542c4bdb"><div class="ttname"><a href="class_jogador.html#a759bb7ee2a5148baf083ddc3542c4bdb">Jogador::setVitLig</a></div><div class="ttdeci">void setVitLig(int vitLig)</div><div class="ttdoc">Define o número de vitórias em partidas de ligação.</div><div class="ttdef"><b>Definição</b> <a href="#l00122">Jogador.cpp:122</a></div></div>
+<div class="ttc" id="aclass_jogador_html_aa79789c5ab3852ac007d4d611d0c2576"><div class="ttname"><a href="class_jogador.html#aa79789c5ab3852ac007d4d611d0c2576">Jogador::setVitVel</a></div><div class="ttdeci">void setVitVel(int vitVel)</div><div class="ttdoc">Define o número de vitórias em partidas de velocidade.</div><div class="ttdef"><b>Definição</b> <a href="#l00104">Jogador.cpp:104</a></div></div>
+<div class="ttc" id="aclass_jogador_html_aa91b6b4737fa1e7fa3f38ab3531eee5d"><div class="ttname"><a href="class_jogador.html#aa91b6b4737fa1e7fa3f38ab3531eee5d">Jogador::mostrarTabela</a></div><div class="ttdeci">void mostrarTabela()</div><div class="ttdoc">Exibe uma tabela com as estatísticas do jogador.</div><div class="ttdef"><b>Definição</b> <a href="#l00041">Jogador.cpp:41</a></div></div>
+<div class="ttc" id="aclass_jogador_html_aaee0500df56bdf28ecff5b887bc2bae6"><div class="ttname"><a href="class_jogador.html#aaee0500df56bdf28ecff5b887bc2bae6">Jogador::getDerVel</a></div><div class="ttdeci">int getDerVel()</div><div class="ttdoc">Obtém o número de derrotas em partidas de velocidade.</div><div class="ttdef"><b>Definição</b> <a href="#l00077">Jogador.cpp:77</a></div></div>
+<div class="ttc" id="aclass_jogador_html_ab1f786b84599a4e8e69303941e3e1716"><div class="ttname"><a href="class_jogador.html#ab1f786b84599a4e8e69303941e3e1716">Jogador::getDerLig</a></div><div class="ttdeci">int getDerLig()</div><div class="ttdoc">Obtém o número de derrotas em partidas de ligação.</div><div class="ttdef"><b>Definição</b> <a href="#l00095">Jogador.cpp:95</a></div></div>
+<div class="ttc" id="aclass_jogador_html_abc5b9de95f846ffee2a7d5b21871e020"><div class="ttname"><a href="class_jogador.html#abc5b9de95f846ffee2a7d5b21871e020">Jogador::getVitLig</a></div><div class="ttdeci">int getVitLig()</div><div class="ttdoc">Obtém o número de vitórias em partidas de ligação.</div><div class="ttdef"><b>Definição</b> <a href="#l00068">Jogador.cpp:68</a></div></div>
+<div class="ttc" id="aclass_jogador_html_ad1171e51cc7ddd649d99bfaa8cdc405e"><div class="ttname"><a href="class_jogador.html#ad1171e51cc7ddd649d99bfaa8cdc405e">Jogador::setVitRev</a></div><div class="ttdeci">void setVitRev(int vitRev)</div><div class="ttdoc">Define o número de vitórias em partidas de reversão.</div><div class="ttdef"><b>Definição</b> <a href="#l00113">Jogador.cpp:113</a></div></div>
+<div class="ttc" id="aclass_jogador_html_ae5601c2716deaee9333a98fb7ed4f6e8"><div class="ttname"><a href="class_jogador.html#ae5601c2716deaee9333a98fb7ed4f6e8">Jogador::setDerVel</a></div><div class="ttdeci">void setDerVel(int derVel)</div><div class="ttdoc">Define o número de derrotas em partidas de velocidade.</div><div class="ttdef"><b>Definição</b> <a href="#l00131">Jogador.cpp:131</a></div></div>
+<div class="ttc" id="aclass_jogador_html_af3bdbaa3991abcd31570293c1bcd05d9"><div class="ttname"><a href="class_jogador.html#af3bdbaa3991abcd31570293c1bcd05d9">Jogador::setDerRev</a></div><div class="ttdeci">void setDerRev(int derRev)</div><div class="ttdoc">Define o número de derrotas em partidas de reversão.</div><div class="ttdef"><b>Definição</b> <a href="#l00140">Jogador.cpp:140</a></div></div>
+<div class="ttc" id="aclass_jogador_html_afeda6a8f49aeb5a557a5b58de6ee6833"><div class="ttname"><a href="class_jogador.html#afeda6a8f49aeb5a557a5b58de6ee6833">Jogador::getVitRev</a></div><div class="ttdeci">int getVitRev()</div><div class="ttdoc">Obtém o número de vitórias em partidas de reversão.</div><div class="ttdef"><b>Definição</b> <a href="#l00059">Jogador.cpp:59</a></div></div>
+<div class="ttc" id="aclass_usuario_html"><div class="ttname"><a href="class_usuario.html">Usuario</a></div><div class="ttdoc">Classe que representa um usuário de um jogo.</div><div class="ttdef"><b>Definição</b> <a href="_usuario_8hpp_source.html#l00012">Usuario.hpp:12</a></div></div>
+<div class="ttc" id="aclass_usuario_html_a0a7f06f65a60dd3bf56e29814b912e28"><div class="ttname"><a href="class_usuario.html#a0a7f06f65a60dd3bf56e29814b912e28">Usuario::Usuario</a></div><div class="ttdeci">Usuario(std::string nome, std::string apelido)</div><div class="ttdoc">Construtor da classe Usuario.</div><div class="ttdef"><b>Definição</b> <a href="_usuario_8hpp_source.html#l00028">Usuario.hpp:28</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

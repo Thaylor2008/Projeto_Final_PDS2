@@ -1,0 +1,592 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Jogos de Tabuleiro: Referência da Classe Reversi</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Jogos de Tabuleiro<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">O Projeto de Jogos de Tabuleiro é uma plataforma desenvolvida em linguagem C++ com o objetivo de realizar um sistema unificado e modular de jogos clássicos, como Reversi, conhecido também como Othello, Lig4 e o Jogo da Velha.</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Membros Públicos</a> &#124;
+<a href="class_reversi-members.html">Lista de todos os Membros</a>  </div>
+  <div class="headertitle"><div class="title">Referência da Classe Reversi</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Classe que representa o jogo <a class="el" href="class_reversi.html" title="Classe que representa o jogo Reversi, herda de JogosTab.">Reversi</a>, herda de <a class="el" href="class_jogos_tab.html" title="Classe base abstrata para jogos de tabuleiro.">JogosTab</a>.  
+ <a href="#details">Mais...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_reversi_8hpp_source.html">Reversi.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de hierarquia da classe Reversi:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_reversi.png" usemap="#Reversi_map" alt=""/>
+  <map id="Reversi_map" name="Reversi_map">
+<area href="class_jogos_tab.html" title="Classe base abstrata para jogos de tabuleiro." alt="JogosTab" shape="rect" coords="0,0,67,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Membros Públicos</h2></td></tr>
+<tr class="memitem:a73e3ca5c21b634f9c490b404d62f0e01" id="r_a73e3ca5c21b634f9c490b404d62f0e01"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73e3ca5c21b634f9c490b404d62f0e01">Reversi</a> ()</td></tr>
+<tr class="memdesc:a73e3ca5c21b634f9c490b404d62f0e01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor da classe <a class="el" href="class_reversi.html" title="Classe que representa o jogo Reversi, herda de JogosTab.">Reversi</a>. Inicializa os pontos dos jogadores.  <br /></td></tr>
+<tr class="separator:a73e3ca5c21b634f9c490b404d62f0e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38565bf21cc01b4f4817e4889186dcc9" id="r_a38565bf21cc01b4f4817e4889186dcc9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38565bf21cc01b4f4817e4889186dcc9">mostraTabuleiro</a> () const override</td></tr>
+<tr class="memdesc:a38565bf21cc01b4f4817e4889186dcc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mostra o tabuleiro do jogo.  <br /></td></tr>
+<tr class="separator:a38565bf21cc01b4f4817e4889186dcc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ee0bad3631b1c62e7251b0d20f5387d" id="r_a6ee0bad3631b1c62e7251b0d20f5387d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ee0bad3631b1c62e7251b0d20f5387d">testaJogada</a> (int linha, int coluna, char jogador) override</td></tr>
+<tr class="memdesc:a6ee0bad3631b1c62e7251b0d20f5387d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Testa se uma jogada é válida.  <br /></td></tr>
+<tr class="separator:a6ee0bad3631b1c62e7251b0d20f5387d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0cd17d90a8da0796750e58102a2f688" id="r_ab0cd17d90a8da0796750e58102a2f688"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0cd17d90a8da0796750e58102a2f688">atualizaTabuleiro</a> (int linha, int coluna, char jogador) override</td></tr>
+<tr class="memdesc:ab0cd17d90a8da0796750e58102a2f688"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atualiza o tabuleiro após uma jogada.  <br /></td></tr>
+<tr class="separator:ab0cd17d90a8da0796750e58102a2f688"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38e48bef684bab021ea344111240e538" id="r_a38e48bef684bab021ea344111240e538"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38e48bef684bab021ea344111240e538">verificaVencedor</a> () override</td></tr>
+<tr class="memdesc:a38e48bef684bab021ea344111240e538"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica se existe um vencedor no jogo.  <br /></td></tr>
+<tr class="separator:a38e48bef684bab021ea344111240e538"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0412b70e7c358f0dd00bbb1e8aa4e148" id="r_a0412b70e7c358f0dd00bbb1e8aa4e148"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0412b70e7c358f0dd00bbb1e8aa4e148">setPontosB</a> (int num)</td></tr>
+<tr class="memdesc:a0412b70e7c358f0dd00bbb1e8aa4e148"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a pontuação do jogador B.  <br /></td></tr>
+<tr class="separator:a0412b70e7c358f0dd00bbb1e8aa4e148"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc50d4a19d9dd2e1c5b65ac2a61e7fdc" id="r_abc50d4a19d9dd2e1c5b65ac2a61e7fdc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc50d4a19d9dd2e1c5b65ac2a61e7fdc">setPontosP</a> (int num)</td></tr>
+<tr class="memdesc:abc50d4a19d9dd2e1c5b65ac2a61e7fdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a pontuação do jogador P.  <br /></td></tr>
+<tr class="separator:abc50d4a19d9dd2e1c5b65ac2a61e7fdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f18977910282182b2d24925c071b093" id="r_a5f18977910282182b2d24925c071b093"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f18977910282182b2d24925c071b093">getPontosB</a> ()</td></tr>
+<tr class="memdesc:a5f18977910282182b2d24925c071b093"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna a pontuação do jogador B.  <br /></td></tr>
+<tr class="separator:a5f18977910282182b2d24925c071b093"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe161d7a306fff540895638420da243c" id="r_abe161d7a306fff540895638420da243c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe161d7a306fff540895638420da243c">getPontosP</a> ()</td></tr>
+<tr class="memdesc:abe161d7a306fff540895638420da243c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna a pontuação do jogador P.  <br /></td></tr>
+<tr class="separator:abe161d7a306fff540895638420da243c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_jogos_tab"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_jogos_tab')"><img src="closed.png" alt="-"/>&#160;Membros Públicos herdados de <a class="el" href="class_jogos_tab.html">JogosTab</a></td></tr>
+<tr class="memitem:a736b139e0fd35ef68757e3754d298364 inherit pub_methods_class_jogos_tab" id="r_a736b139e0fd35ef68757e3754d298364"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jogos_tab.html#a736b139e0fd35ef68757e3754d298364">JogosTab</a> (int <a class="el" href="class_jogos_tab.html#aa59044d89cd52e1a9e3aed40da122b4b">linhas</a>, int <a class="el" href="class_jogos_tab.html#aab882aabf29a473dbd00e6706fa02f9d">colunas</a>)</td></tr>
+<tr class="memdesc:a736b139e0fd35ef68757e3754d298364 inherit pub_methods_class_jogos_tab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor da classe <a class="el" href="class_jogos_tab.html" title="Classe base abstrata para jogos de tabuleiro.">JogosTab</a>.  <br /></td></tr>
+<tr class="separator:a736b139e0fd35ef68757e3754d298364 inherit pub_methods_class_jogos_tab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20d8ec1ca3fd8b7d110c74ae09152e74 inherit pub_methods_class_jogos_tab" id="r_a20d8ec1ca3fd8b7d110c74ae09152e74"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jogos_tab.html#a20d8ec1ca3fd8b7d110c74ae09152e74">~JogosTab</a> ()=default</td></tr>
+<tr class="memdesc:a20d8ec1ca3fd8b7d110c74ae09152e74 inherit pub_methods_class_jogos_tab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destrutor virtual da classe <a class="el" href="class_jogos_tab.html" title="Classe base abstrata para jogos de tabuleiro.">JogosTab</a>.  <br /></td></tr>
+<tr class="separator:a20d8ec1ca3fd8b7d110c74ae09152e74 inherit pub_methods_class_jogos_tab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7821ea56bb2cbbcc9c42fdba8eb0e2d4 inherit pub_methods_class_jogos_tab" id="r_a7821ea56bb2cbbcc9c42fdba8eb0e2d4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jogos_tab.html#a7821ea56bb2cbbcc9c42fdba8eb0e2d4">resetaTabuleiro</a> ()</td></tr>
+<tr class="memdesc:a7821ea56bb2cbbcc9c42fdba8eb0e2d4 inherit pub_methods_class_jogos_tab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reseta o tabuleiro para o estado inicial.  <br /></td></tr>
+<tr class="separator:a7821ea56bb2cbbcc9c42fdba8eb0e2d4 inherit pub_methods_class_jogos_tab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afffe3875a5d27629623b0d9859e54d4b inherit pub_methods_class_jogos_tab" id="r_afffe3875a5d27629623b0d9859e54d4b"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; std::vector&lt; char &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jogos_tab.html#afffe3875a5d27629623b0d9859e54d4b">getTabuleiro</a> () const</td></tr>
+<tr class="memdesc:afffe3875a5d27629623b0d9859e54d4b inherit pub_methods_class_jogos_tab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtém o tabuleiro atual.  <br /></td></tr>
+<tr class="separator:afffe3875a5d27629623b0d9859e54d4b inherit pub_methods_class_jogos_tab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afda281ec9950502266a14458291cf3b4 inherit pub_methods_class_jogos_tab" id="r_afda281ec9950502266a14458291cf3b4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jogos_tab.html#afda281ec9950502266a14458291cf3b4">getLinhas</a> () const</td></tr>
+<tr class="memdesc:afda281ec9950502266a14458291cf3b4 inherit pub_methods_class_jogos_tab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtém o número de linhas do tabuleiro.  <br /></td></tr>
+<tr class="separator:afda281ec9950502266a14458291cf3b4 inherit pub_methods_class_jogos_tab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefa3a215dee208de5bd848eb8edc9c35 inherit pub_methods_class_jogos_tab" id="r_aefa3a215dee208de5bd848eb8edc9c35"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jogos_tab.html#aefa3a215dee208de5bd848eb8edc9c35">getColunas</a> () const</td></tr>
+<tr class="memdesc:aefa3a215dee208de5bd848eb8edc9c35 inherit pub_methods_class_jogos_tab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtém o número de colunas do tabuleiro.  <br /></td></tr>
+<tr class="separator:aefa3a215dee208de5bd848eb8edc9c35 inherit pub_methods_class_jogos_tab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Outros membros herdados</h2></td></tr>
+<tr class="inherit_header pro_attribs_class_jogos_tab"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_class_jogos_tab')"><img src="closed.png" alt="-"/>&#160;Atributos Protegidos herdados de <a class="el" href="class_jogos_tab.html">JogosTab</a></td></tr>
+<tr class="memitem:a11340e55a23712d255aebbe43359ed2b inherit pro_attribs_class_jogos_tab" id="r_a11340e55a23712d255aebbe43359ed2b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; char &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jogos_tab.html#a11340e55a23712d255aebbe43359ed2b">tabuleiro</a></td></tr>
+<tr class="memdesc:a11340e55a23712d255aebbe43359ed2b inherit pro_attribs_class_jogos_tab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Representa o tabuleiro do jogo como uma matriz de caracteres.  <br /></td></tr>
+<tr class="separator:a11340e55a23712d255aebbe43359ed2b inherit pro_attribs_class_jogos_tab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa59044d89cd52e1a9e3aed40da122b4b inherit pro_attribs_class_jogos_tab" id="r_aa59044d89cd52e1a9e3aed40da122b4b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jogos_tab.html#aa59044d89cd52e1a9e3aed40da122b4b">linhas</a></td></tr>
+<tr class="memdesc:aa59044d89cd52e1a9e3aed40da122b4b inherit pro_attribs_class_jogos_tab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Número de linhas do tabuleiro.  <br /></td></tr>
+<tr class="separator:aa59044d89cd52e1a9e3aed40da122b4b inherit pro_attribs_class_jogos_tab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab882aabf29a473dbd00e6706fa02f9d inherit pro_attribs_class_jogos_tab" id="r_aab882aabf29a473dbd00e6706fa02f9d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jogos_tab.html#aab882aabf29a473dbd00e6706fa02f9d">colunas</a></td></tr>
+<tr class="memdesc:aab882aabf29a473dbd00e6706fa02f9d inherit pro_attribs_class_jogos_tab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Número de colunas do tabuleiro.  <br /></td></tr>
+<tr class="separator:aab882aabf29a473dbd00e6706fa02f9d inherit pro_attribs_class_jogos_tab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Classe que representa o jogo <a class="el" href="class_reversi.html" title="Classe que representa o jogo Reversi, herda de JogosTab.">Reversi</a>, herda de <a class="el" href="class_jogos_tab.html" title="Classe base abstrata para jogos de tabuleiro.">JogosTab</a>. </p>
+<p>A classe contém métodos para mostrar o tabuleiro, testar jogadas, atualizar o tabuleiro, verificar o vencedor e manipular os pontos dos jogadores. </p>
+
+<p class="definition">Definição na linha <a class="el" href="_reversi_8hpp_source.html#l00013">13</a> do arquivo <a class="el" href="_reversi_8hpp_source.html">Reversi.hpp</a>.</p>
+</div><h2 class="groupheader">Construtores e Destrutores</h2>
+<a id="a73e3ca5c21b634f9c490b404d62f0e01" name="a73e3ca5c21b634f9c490b404d62f0e01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73e3ca5c21b634f9c490b404d62f0e01">&#9670;&#160;</a></span>Reversi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Reversi::Reversi </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construtor da classe <a class="el" href="class_reversi.html" title="Classe que representa o jogo Reversi, herda de JogosTab.">Reversi</a>. Inicializa os pontos dos jogadores. </p>
+<p>Construtor da classe <a class="el" href="class_reversi.html" title="Classe que representa o jogo Reversi, herda de JogosTab.">Reversi</a>.</p>
+<p>Este construtor inicializa o tabuleiro com a configuração padrão do jogo <a class="el" href="class_reversi.html" title="Classe que representa o jogo Reversi, herda de JogosTab.">Reversi</a>, com as quatro peças iniciais no centro. </p>
+
+<p class="definition">Definição na linha <a class="el" href="_reversi_8cpp_source.html#l00010">10</a> do arquivo <a class="el" href="_reversi_8cpp_source.html">Reversi.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   10</span>                 : <a class="code hl_function" href="class_jogos_tab.html#a736b139e0fd35ef68757e3754d298364">JogosTab</a>(8, 8) {</div>
+<div class="line"><span class="lineno">   11</span>    <a class="code hl_variable" href="class_jogos_tab.html#a11340e55a23712d255aebbe43359ed2b">tabuleiro</a>[3][3] = <span class="charliteral">&#39;O&#39;</span>;</div>
+<div class="line"><span class="lineno">   12</span>    <a class="code hl_variable" href="class_jogos_tab.html#a11340e55a23712d255aebbe43359ed2b">tabuleiro</a>[3][4] = <span class="charliteral">&#39;X&#39;</span>;</div>
+<div class="line"><span class="lineno">   13</span>    <a class="code hl_variable" href="class_jogos_tab.html#a11340e55a23712d255aebbe43359ed2b">tabuleiro</a>[4][3] = <span class="charliteral">&#39;X&#39;</span>;</div>
+<div class="line"><span class="lineno">   14</span>    <a class="code hl_variable" href="class_jogos_tab.html#a11340e55a23712d255aebbe43359ed2b">tabuleiro</a>[4][4] = <span class="charliteral">&#39;O&#39;</span>;</div>
+<div class="line"><span class="lineno">   15</span>}</div>
+<div class="ttc" id="aclass_jogos_tab_html_a11340e55a23712d255aebbe43359ed2b"><div class="ttname"><a href="class_jogos_tab.html#a11340e55a23712d255aebbe43359ed2b">JogosTab::tabuleiro</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; char &gt; &gt; tabuleiro</div><div class="ttdoc">Representa o tabuleiro do jogo como uma matriz de caracteres.</div><div class="ttdef"><b>Definição</b> <a href="_jogos_tab_8hpp_source.html#l00015">JogosTab.hpp:15</a></div></div>
+<div class="ttc" id="aclass_jogos_tab_html_a736b139e0fd35ef68757e3754d298364"><div class="ttname"><a href="class_jogos_tab.html#a736b139e0fd35ef68757e3754d298364">JogosTab::JogosTab</a></div><div class="ttdeci">JogosTab(int linhas, int colunas)</div><div class="ttdoc">Construtor da classe JogosTab.</div><div class="ttdef"><b>Definição</b> <a href="_jogos_tab_8hpp_source.html#l00034">JogosTab.hpp:34</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="ab0cd17d90a8da0796750e58102a2f688" name="ab0cd17d90a8da0796750e58102a2f688"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0cd17d90a8da0796750e58102a2f688">&#9670;&#160;</a></span>atualizaTabuleiro()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Reversi::atualizaTabuleiro </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>linha</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>coluna</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>jogador</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Atualiza o tabuleiro após uma jogada. </p>
+<p>Atualiza o tabuleiro com a jogada.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">linha</td><td>Linha onde o jogador jogou. </td></tr>
+    <tr><td class="paramname">coluna</td><td>Coluna onde o jogador jogou. </td></tr>
+    <tr><td class="paramname">jogador</td><td>O jogador que fez a jogada.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Coloca a peça do jogador na posição escolhida e inverte as peças adversárias ao redor da jogada.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">linha</td><td>Linha onde o jogador fez a jogada. </td></tr>
+    <tr><td class="paramname">coluna</td><td>Coluna onde o jogador fez a jogada. </td></tr>
+    <tr><td class="paramname">jogador</td><td>O jogador que está fazendo a jogada. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementa <a class="el" href="class_jogos_tab.html#a60f62f430a8a5ba499723e7462d3e637">JogosTab</a>.</p>
+
+<p class="definition">Definição na linha <a class="el" href="_reversi_8cpp_source.html#l00072">72</a> do arquivo <a class="el" href="_reversi_8cpp_source.html">Reversi.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   72</span>                                                                   {</div>
+<div class="line"><span class="lineno">   73</span>    <a class="code hl_variable" href="class_jogos_tab.html#a11340e55a23712d255aebbe43359ed2b">tabuleiro</a>[linha][coluna] = jogador;</div>
+<div class="line"><span class="lineno">   74</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> dirLinha = -1; dirLinha &lt;= 1; ++dirLinha) {</div>
+<div class="line"><span class="lineno">   75</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> dirColuna = -1; dirColuna &lt;= 1; ++dirColuna) {</div>
+<div class="line"><span class="lineno">   76</span>            <span class="keywordflow">if</span> (dirLinha != 0 || dirColuna != 0) {</div>
+<div class="line"><span class="lineno">   77</span>                <span class="keywordflow">if</span> (verificaDirecao(linha, coluna, dirLinha, dirColuna, jogador)) {</div>
+<div class="line"><span class="lineno">   78</span>                    inverterPecas(linha, coluna, jogador);</div>
+<div class="line"><span class="lineno">   79</span>                }</div>
+<div class="line"><span class="lineno">   80</span>            }</div>
+<div class="line"><span class="lineno">   81</span>        }</div>
+<div class="line"><span class="lineno">   82</span>    }</div>
+<div class="line"><span class="lineno">   83</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5f18977910282182b2d24925c071b093" name="a5f18977910282182b2d24925c071b093"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f18977910282182b2d24925c071b093">&#9670;&#160;</a></span>getPontosB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Reversi::getPontosB </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retorna a pontuação do jogador B. </p>
+<p>Obtém a quantidade de pontos do jogador "B".</p>
+<dl class="section return"><dt>Retorna</dt><dd>Pontuação do jogador B.</dd>
+<dd>
+int Número de pontos do jogador "B". </dd></dl>
+
+<p class="definition">Definição na linha <a class="el" href="_reversi_8cpp_source.html#l00198">198</a> do arquivo <a class="el" href="_reversi_8cpp_source.html">Reversi.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  198</span>                        {</div>
+<div class="line"><span class="lineno">  199</span>    <span class="keywordflow">return</span> pontosB;</div>
+<div class="line"><span class="lineno">  200</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="abe161d7a306fff540895638420da243c" name="abe161d7a306fff540895638420da243c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe161d7a306fff540895638420da243c">&#9670;&#160;</a></span>getPontosP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Reversi::getPontosP </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retorna a pontuação do jogador P. </p>
+<p>Obtém a quantidade de pontos do jogador "P".</p>
+<dl class="section return"><dt>Retorna</dt><dd>Pontuação do jogador P.</dd>
+<dd>
+int Número de pontos do jogador "P". </dd></dl>
+
+<p class="definition">Definição na linha <a class="el" href="_reversi_8cpp_source.html#l00207">207</a> do arquivo <a class="el" href="_reversi_8cpp_source.html">Reversi.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  207</span>                        {</div>
+<div class="line"><span class="lineno">  208</span>    <span class="keywordflow">return</span> pontosP;</div>
+<div class="line"><span class="lineno">  209</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a38565bf21cc01b4f4817e4889186dcc9" name="a38565bf21cc01b4f4817e4889186dcc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38565bf21cc01b4f4817e4889186dcc9">&#9670;&#160;</a></span>mostraTabuleiro()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Reversi::mostraTabuleiro </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Mostra o tabuleiro do jogo. </p>
+<p>Exibe o estado atual do tabuleiro.</p>
+<p>Este método sobrescreve o método da classe base para exibir o tabuleiro.</p>
+<p>Mostra o tabuleiro com as peças e os números das colunas e linhas para facilitar a visualização. </p>
+
+<p>Implementa <a class="el" href="class_jogos_tab.html#a0592152a7bf451e330ce81609ca86a90">JogosTab</a>.</p>
+
+<p class="definition">Definição na linha <a class="el" href="_reversi_8cpp_source.html#l00022">22</a> do arquivo <a class="el" href="_reversi_8cpp_source.html">Reversi.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   22</span>                                    {</div>
+<div class="line"><span class="lineno">   23</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="class_jogos_tab.html#aa59044d89cd52e1a9e3aed40da122b4b">linhas</a>; ++i) {</div>
+<div class="line"><span class="lineno">   24</span>        cout &lt;&lt; i+1 &lt;&lt; <span class="stringliteral">&quot;| &quot;</span>;</div>
+<div class="line"><span class="lineno">   25</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; <a class="code hl_variable" href="class_jogos_tab.html#aab882aabf29a473dbd00e6706fa02f9d">colunas</a>; ++j) {</div>
+<div class="line"><span class="lineno">   26</span>            cout &lt;&lt; (<a class="code hl_variable" href="class_jogos_tab.html#a11340e55a23712d255aebbe43359ed2b">tabuleiro</a>[i][j] == <span class="charliteral">&#39; &#39;</span> ? <span class="charliteral">&#39;.&#39;</span> : <a class="code hl_variable" href="class_jogos_tab.html#a11340e55a23712d255aebbe43359ed2b">tabuleiro</a>[i][j]) &lt;&lt; <span class="stringliteral">&quot; | &quot;</span>;</div>
+<div class="line"><span class="lineno">   27</span>        }</div>
+<div class="line"><span class="lineno">   28</span>        cout &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">   29</span>    }</div>
+<div class="line"><span class="lineno">   30</span>    cout &lt;&lt; <span class="stringliteral">&quot;   1   2   3   4   5   6   7   8&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">   31</span>}</div>
+<div class="ttc" id="aclass_jogos_tab_html_aa59044d89cd52e1a9e3aed40da122b4b"><div class="ttname"><a href="class_jogos_tab.html#aa59044d89cd52e1a9e3aed40da122b4b">JogosTab::linhas</a></div><div class="ttdeci">int linhas</div><div class="ttdoc">Número de linhas do tabuleiro.</div><div class="ttdef"><b>Definição</b> <a href="_jogos_tab_8hpp_source.html#l00020">JogosTab.hpp:20</a></div></div>
+<div class="ttc" id="aclass_jogos_tab_html_aab882aabf29a473dbd00e6706fa02f9d"><div class="ttname"><a href="class_jogos_tab.html#aab882aabf29a473dbd00e6706fa02f9d">JogosTab::colunas</a></div><div class="ttdeci">int colunas</div><div class="ttdoc">Número de colunas do tabuleiro.</div><div class="ttdef"><b>Definição</b> <a href="_jogos_tab_8hpp_source.html#l00025">JogosTab.hpp:25</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a0412b70e7c358f0dd00bbb1e8aa4e148" name="a0412b70e7c358f0dd00bbb1e8aa4e148"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0412b70e7c358f0dd00bbb1e8aa4e148">&#9670;&#160;</a></span>setPontosB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Reversi::setPontosB </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>num</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Define a pontuação do jogador B. </p>
+<p>Define a quantidade de pontos do jogador "B".</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">num</td><td>Nova pontuação para o jogador B.</td></tr>
+    <tr><td class="paramname">num</td><td>Número de pontos do jogador "B". </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definição na linha <a class="el" href="_reversi_8cpp_source.html#l00189">189</a> do arquivo <a class="el" href="_reversi_8cpp_source.html">Reversi.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  189</span>                                {</div>
+<div class="line"><span class="lineno">  190</span>    this-&gt;pontosB = num;</div>
+<div class="line"><span class="lineno">  191</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="abc50d4a19d9dd2e1c5b65ac2a61e7fdc" name="abc50d4a19d9dd2e1c5b65ac2a61e7fdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc50d4a19d9dd2e1c5b65ac2a61e7fdc">&#9670;&#160;</a></span>setPontosP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Reversi::setPontosP </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>num</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Define a pontuação do jogador P. </p>
+<p>Define a quantidade de pontos do jogador "P".</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">num</td><td>Nova pontuação para o jogador P.</td></tr>
+    <tr><td class="paramname">num</td><td>Número de pontos do jogador "P". </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definição na linha <a class="el" href="_reversi_8cpp_source.html#l00180">180</a> do arquivo <a class="el" href="_reversi_8cpp_source.html">Reversi.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  180</span>                                {</div>
+<div class="line"><span class="lineno">  181</span>    this-&gt;pontosP = num;</div>
+<div class="line"><span class="lineno">  182</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6ee0bad3631b1c62e7251b0d20f5387d" name="a6ee0bad3631b1c62e7251b0d20f5387d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ee0bad3631b1c62e7251b0d20f5387d">&#9670;&#160;</a></span>testaJogada()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Reversi::testaJogada </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>linha</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>coluna</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>jogador</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Testa se uma jogada é válida. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">linha</td><td>Linha onde o jogador deseja jogar. </td></tr>
+    <tr><td class="paramname">coluna</td><td>Coluna onde o jogador deseja jogar. </td></tr>
+    <tr><td class="paramname">jogador</td><td>O jogador que está fazendo a jogada (P ou B). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>true se a jogada for válida, false caso contrário.</dd></dl>
+<p>Verifica se a posição onde o jogador deseja colocar sua peça é válida, ou seja, se está livre e se a jogada segue as regras do <a class="el" href="class_reversi.html" title="Classe que representa o jogo Reversi, herda de JogosTab.">Reversi</a>.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">linha</td><td>Linha onde o jogador deseja jogar. </td></tr>
+    <tr><td class="paramname">coluna</td><td>Coluna onde o jogador deseja jogar. </td></tr>
+    <tr><td class="paramname">jogador</td><td>O jogador que está tentando fazer a jogada ('X' ou 'O').</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>true Se a jogada for válida. </dd>
+<dd>
+false Se a jogada for inválida. </dd></dl>
+
+<p>Implementa <a class="el" href="class_jogos_tab.html#a4723a3d38286652d3a16cc42c38d2c99">JogosTab</a>.</p>
+
+<p class="definition">Definição na linha <a class="el" href="_reversi_8cpp_source.html#l00045">45</a> do arquivo <a class="el" href="_reversi_8cpp_source.html">Reversi.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   45</span>                                                             {</div>
+<div class="line"><span class="lineno">   46</span>    <span class="keywordflow">if</span> (!posicaoValida(linha, coluna) || <a class="code hl_variable" href="class_jogos_tab.html#a11340e55a23712d255aebbe43359ed2b">tabuleiro</a>[linha][coluna] != <span class="charliteral">&#39; &#39;</span>) {</div>
+<div class="line"><span class="lineno">   47</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   48</span>    }</div>
+<div class="line"><span class="lineno">   49</span> </div>
+<div class="line"><span class="lineno">   50</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> dirLinha = -1; dirLinha &lt;= 1; ++dirLinha) {</div>
+<div class="line"><span class="lineno">   51</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> dirColuna = -1; dirColuna &lt;= 1; ++dirColuna) {</div>
+<div class="line"><span class="lineno">   52</span>            <span class="keywordflow">if</span> (dirLinha != 0 || dirColuna != 0) {</div>
+<div class="line"><span class="lineno">   53</span>                <span class="keywordflow">if</span> (verificaDirecao(linha, coluna, dirLinha, dirColuna, jogador)) {</div>
+<div class="line"><span class="lineno">   54</span>                    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   55</span>                }</div>
+<div class="line"><span class="lineno">   56</span>            }</div>
+<div class="line"><span class="lineno">   57</span>        }</div>
+<div class="line"><span class="lineno">   58</span>    }</div>
+<div class="line"><span class="lineno">   59</span> </div>
+<div class="line"><span class="lineno">   60</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   61</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a38e48bef684bab021ea344111240e538" name="a38e48bef684bab021ea344111240e538"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38e48bef684bab021ea344111240e538">&#9670;&#160;</a></span>verificaVencedor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Reversi::verificaVencedor </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Verifica se existe um vencedor no jogo. </p>
+<p>Verifica se há um vencedor.</p>
+<dl class="section return"><dt>Retorna</dt><dd>true se houver um vencedor, false caso contrário.</dd></dl>
+<p>Conta as peças de cada jogador e verifica se há um vencedor, ou se o jogo terminou em empate.</p>
+<dl class="section return"><dt>Retorna</dt><dd>true Se houve um vencedor (ou o jogo terminou). </dd>
+<dd>
+false Se o jogo ainda está em andamento. </dd></dl>
+
+<p>Implementa <a class="el" href="class_jogos_tab.html#a6a546a72d3a0753c03914eb1ba60fb6e">JogosTab</a>.</p>
+
+<p class="definition">Definição na linha <a class="el" href="_reversi_8cpp_source.html#l00093">93</a> do arquivo <a class="el" href="_reversi_8cpp_source.html">Reversi.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   93</span>                               {</div>
+<div class="line"><span class="lineno">   94</span>    <span class="keywordtype">int</span> countX = 0, countO = 0;</div>
+<div class="line"><span class="lineno">   95</span> </div>
+<div class="line"><span class="lineno">   96</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; linha : <a class="code hl_variable" href="class_jogos_tab.html#a11340e55a23712d255aebbe43359ed2b">tabuleiro</a>) {</div>
+<div class="line"><span class="lineno">   97</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; celula : linha) {</div>
+<div class="line"><span class="lineno">   98</span>            <span class="keywordflow">if</span> (celula == <span class="charliteral">&#39;X&#39;</span>) ++countX;</div>
+<div class="line"><span class="lineno">   99</span>            <span class="keywordflow">if</span> (celula == <span class="charliteral">&#39;O&#39;</span>) ++countO;</div>
+<div class="line"><span class="lineno">  100</span>        }</div>
+<div class="line"><span class="lineno">  101</span>    }</div>
+<div class="line"><span class="lineno">  102</span>    <a class="code hl_function" href="#abc50d4a19d9dd2e1c5b65ac2a61e7fdc">setPontosP</a>(countX);</div>
+<div class="line"><span class="lineno">  103</span>    <a class="code hl_function" href="#a0412b70e7c358f0dd00bbb1e8aa4e148">setPontosB</a>(countO);</div>
+<div class="line"><span class="lineno">  104</span>    <span class="keywordflow">return</span> countX == 0 || countO == 0 || (countX + countO == <a class="code hl_variable" href="class_jogos_tab.html#aa59044d89cd52e1a9e3aed40da122b4b">linhas</a> * <a class="code hl_variable" href="class_jogos_tab.html#aab882aabf29a473dbd00e6706fa02f9d">colunas</a>);</div>
+<div class="line"><span class="lineno">  105</span>}</div>
+<div class="ttc" id="aclass_reversi_html_a0412b70e7c358f0dd00bbb1e8aa4e148"><div class="ttname"><a href="#a0412b70e7c358f0dd00bbb1e8aa4e148">Reversi::setPontosB</a></div><div class="ttdeci">void setPontosB(int num)</div><div class="ttdoc">Define a pontuação do jogador B.</div><div class="ttdef"><b>Definição</b> <a href="_reversi_8cpp_source.html#l00189">Reversi.cpp:189</a></div></div>
+<div class="ttc" id="aclass_reversi_html_abc50d4a19d9dd2e1c5b65ac2a61e7fdc"><div class="ttname"><a href="#abc50d4a19d9dd2e1c5b65ac2a61e7fdc">Reversi::setPontosP</a></div><div class="ttdeci">void setPontosP(int num)</div><div class="ttdoc">Define a pontuação do jogador P.</div><div class="ttdef"><b>Definição</b> <a href="_reversi_8cpp_source.html#l00180">Reversi.cpp:180</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<hr/>A documentação para essa classe foi gerada a partir dos seguintes arquivos:<ul>
+<li>C:/Users/thayl/OneDrive/Área de Trabalho/Projeto_Final_PDS2/include/<a class="el" href="_reversi_8hpp_source.html">Reversi.hpp</a></li>
+<li>C:/Users/thayl/OneDrive/Área de Trabalho/Projeto_Final_PDS2/src/<a class="el" href="_reversi_8cpp_source.html">Reversi.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

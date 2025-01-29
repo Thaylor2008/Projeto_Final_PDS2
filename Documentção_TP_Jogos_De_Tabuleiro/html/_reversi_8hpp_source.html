@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Jogos de Tabuleiro: Código-Fonte de C:/Users/thayl/OneDrive/Área de Trabalho/Projeto_Final_PDS2/include/Reversi.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Jogos de Tabuleiro<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">O Projeto de Jogos de Tabuleiro é uma plataforma desenvolvida em linguagem C++ com o objetivo de realizar um sistema unificado e modular de jogos clássicos, como Reversi, conhecido também como Othello, Lig4 e o Jogo da Velha.</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_56d0f47407587960cd8030364c96746b.html">Projeto_Final_PDS2</a></li><li class="navelem"><a class="el" href="dir_df803ca1ea935c394d007a431f3842c8.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">Reversi.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_reversi_8hpp.html">Ir para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef REVERSI_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define REVERSI_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="_jogos_tab_8hpp.html">JogosTab.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span></div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="};">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_reversi.html">   13</a></span><span class="keyword">class </span><a class="code hl_function" href="class_reversi.html#a73e3ca5c21b634f9c490b404d62f0e01">Reversi</a> : <span class="keyword">public</span> <a class="code hl_function" href="class_jogos_tab.html#a736b139e0fd35ef68757e3754d298364">JogosTab</a> {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordtype">int</span> pontosP; </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordtype">int</span> pontosB; </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_function" href="class_reversi.html#a73e3ca5c21b634f9c490b404d62f0e01">Reversi</a>();</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_reversi.html#a38565bf21cc01b4f4817e4889186dcc9">mostraTabuleiro</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_reversi.html#a6ee0bad3631b1c62e7251b0d20f5387d">testaJogada</a>(<span class="keywordtype">int</span> linha, <span class="keywordtype">int</span> coluna, <span class="keywordtype">char</span> jogador) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_reversi.html#ab0cd17d90a8da0796750e58102a2f688">atualizaTabuleiro</a>(<span class="keywordtype">int</span> linha, <span class="keywordtype">int</span> coluna, <span class="keywordtype">char</span> jogador) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_reversi.html#a38e48bef684bab021ea344111240e538">verificaVencedor</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_reversi.html#a0412b70e7c358f0dd00bbb1e8aa4e148">setPontosB</a>(<span class="keywordtype">int</span> num);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_reversi.html#abc50d4a19d9dd2e1c5b65ac2a61e7fdc">setPontosP</a>(<span class="keywordtype">int</span> num);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_reversi.html#a5f18977910282182b2d24925c071b093">getPontosB</a>();</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_reversi.html#abe161d7a306fff540895638420da243c">getPontosP</a>();</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>   </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keywordtype">bool</span> posicaoValida(<span class="keywordtype">int</span> linha, <span class="keywordtype">int</span> coluna) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="keywordtype">void</span> inverterPecas(<span class="keywordtype">int</span> linha, <span class="keywordtype">int</span> coluna, <span class="keywordtype">char</span> jogador);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keywordtype">bool</span> verificaDirecao(<span class="keywordtype">int</span> linha, <span class="keywordtype">int</span> coluna, <span class="keywordtype">int</span> dirLinha, <span class="keywordtype">int</span> dirColuna, <span class="keywordtype">char</span> jogador) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>};</div>
+</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="preprocessor">#endif </span><span class="comment">// REVERSI_H</span></div>
+<div class="ttc" id="a_jogos_tab_8hpp_html"><div class="ttname"><a href="_jogos_tab_8hpp.html">JogosTab.hpp</a></div></div>
+<div class="ttc" id="aclass_jogos_tab_html_a736b139e0fd35ef68757e3754d298364"><div class="ttname"><a href="class_jogos_tab.html#a736b139e0fd35ef68757e3754d298364">JogosTab::JogosTab</a></div><div class="ttdeci">JogosTab(int linhas, int colunas)</div><div class="ttdoc">Construtor da classe JogosTab.</div><div class="ttdef"><b>Definição</b> <a href="_jogos_tab_8hpp_source.html#l00034">JogosTab.hpp:34</a></div></div>
+<div class="ttc" id="aclass_reversi_html_a0412b70e7c358f0dd00bbb1e8aa4e148"><div class="ttname"><a href="class_reversi.html#a0412b70e7c358f0dd00bbb1e8aa4e148">Reversi::setPontosB</a></div><div class="ttdeci">void setPontosB(int num)</div><div class="ttdoc">Define a pontuação do jogador B.</div><div class="ttdef"><b>Definição</b> <a href="_reversi_8cpp_source.html#l00189">Reversi.cpp:189</a></div></div>
+<div class="ttc" id="aclass_reversi_html_a38565bf21cc01b4f4817e4889186dcc9"><div class="ttname"><a href="class_reversi.html#a38565bf21cc01b4f4817e4889186dcc9">Reversi::mostraTabuleiro</a></div><div class="ttdeci">void mostraTabuleiro() const override</div><div class="ttdoc">Mostra o tabuleiro do jogo.</div><div class="ttdef"><b>Definição</b> <a href="_reversi_8cpp_source.html#l00022">Reversi.cpp:22</a></div></div>
+<div class="ttc" id="aclass_reversi_html_a38e48bef684bab021ea344111240e538"><div class="ttname"><a href="class_reversi.html#a38e48bef684bab021ea344111240e538">Reversi::verificaVencedor</a></div><div class="ttdeci">bool verificaVencedor() override</div><div class="ttdoc">Verifica se existe um vencedor no jogo.</div><div class="ttdef"><b>Definição</b> <a href="_reversi_8cpp_source.html#l00093">Reversi.cpp:93</a></div></div>
+<div class="ttc" id="aclass_reversi_html_a5f18977910282182b2d24925c071b093"><div class="ttname"><a href="class_reversi.html#a5f18977910282182b2d24925c071b093">Reversi::getPontosB</a></div><div class="ttdeci">int getPontosB()</div><div class="ttdoc">Retorna a pontuação do jogador B.</div><div class="ttdef"><b>Definição</b> <a href="_reversi_8cpp_source.html#l00198">Reversi.cpp:198</a></div></div>
+<div class="ttc" id="aclass_reversi_html_a6ee0bad3631b1c62e7251b0d20f5387d"><div class="ttname"><a href="class_reversi.html#a6ee0bad3631b1c62e7251b0d20f5387d">Reversi::testaJogada</a></div><div class="ttdeci">bool testaJogada(int linha, int coluna, char jogador) override</div><div class="ttdoc">Testa se uma jogada é válida.</div><div class="ttdef"><b>Definição</b> <a href="_reversi_8cpp_source.html#l00045">Reversi.cpp:45</a></div></div>
+<div class="ttc" id="aclass_reversi_html_a73e3ca5c21b634f9c490b404d62f0e01"><div class="ttname"><a href="class_reversi.html#a73e3ca5c21b634f9c490b404d62f0e01">Reversi::Reversi</a></div><div class="ttdeci">Reversi()</div><div class="ttdoc">Construtor da classe Reversi. Inicializa os pontos dos jogadores.</div><div class="ttdef"><b>Definição</b> <a href="_reversi_8cpp_source.html#l00010">Reversi.cpp:10</a></div></div>
+<div class="ttc" id="aclass_reversi_html_ab0cd17d90a8da0796750e58102a2f688"><div class="ttname"><a href="class_reversi.html#ab0cd17d90a8da0796750e58102a2f688">Reversi::atualizaTabuleiro</a></div><div class="ttdeci">void atualizaTabuleiro(int linha, int coluna, char jogador) override</div><div class="ttdoc">Atualiza o tabuleiro após uma jogada.</div><div class="ttdef"><b>Definição</b> <a href="_reversi_8cpp_source.html#l00072">Reversi.cpp:72</a></div></div>
+<div class="ttc" id="aclass_reversi_html_abc50d4a19d9dd2e1c5b65ac2a61e7fdc"><div class="ttname"><a href="class_reversi.html#abc50d4a19d9dd2e1c5b65ac2a61e7fdc">Reversi::setPontosP</a></div><div class="ttdeci">void setPontosP(int num)</div><div class="ttdoc">Define a pontuação do jogador P.</div><div class="ttdef"><b>Definição</b> <a href="_reversi_8cpp_source.html#l00180">Reversi.cpp:180</a></div></div>
+<div class="ttc" id="aclass_reversi_html_abe161d7a306fff540895638420da243c"><div class="ttname"><a href="class_reversi.html#abe161d7a306fff540895638420da243c">Reversi::getPontosP</a></div><div class="ttdeci">int getPontosP()</div><div class="ttdoc">Retorna a pontuação do jogador P.</div><div class="ttdef"><b>Definição</b> <a href="_reversi_8cpp_source.html#l00207">Reversi.cpp:207</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Jogos de Tabuleiro: Código-Fonte de C:/Users/thayl/OneDrive/Área de Trabalho/Projeto_Final_PDS2/include/Admin.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Jogos de Tabuleiro<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">O Projeto de Jogos de Tabuleiro é uma plataforma desenvolvida em linguagem C++ com o objetivo de realizar um sistema unificado e modular de jogos clássicos, como Reversi, conhecido também como Othello, Lig4 e o Jogo da Velha.</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_56d0f47407587960cd8030364c96746b.html">Projeto_Final_PDS2</a></li><li class="navelem"><a class="el" href="dir_df803ca1ea935c394d007a431f3842c8.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">Admin.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_admin_8hpp.html">Ir para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef ADMIN_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define ADMIN_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="_jogador_8hpp.html">Jogador.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span></div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="};">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_admin.html">   11</a></span><span class="keyword">class </span><a class="code hl_function" href="class_admin.html#af035c0358e40658194926a608d44b1b8">Admin</a> {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    std::vector&lt;Jogador*&gt; Jogadores;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    std::string arquivo;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <a class="code hl_function" href="class_admin.html#af035c0358e40658194926a608d44b1b8">Admin</a>(std::string arquivo);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="class_admin.html#ab9e0bae6e2aa2cb4451e4b6076c5e8ab">   38</a></span>    <a class="code hl_class" href="class_jogador.html">Jogador</a>* <a class="code hl_function" href="class_admin.html#ab9e0bae6e2aa2cb4451e4b6076c5e8ab">createJogador</a>(std::string nome, std::string apelido);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="class_admin.html#a4f7dd64601d93c208b9f8577fbc2282d">   54</a></span>    <a class="code hl_class" href="class_jogador.html">Jogador</a>* <a class="code hl_function" href="class_admin.html#a4f7dd64601d93c208b9f8577fbc2282d">createJogador</a>(std::string nome, std::string apelido, <span class="keywordtype">int</span> atributo1, <span class="keywordtype">int</span> atributo2, <span class="keywordtype">int</span> atributo3, <span class="keywordtype">int</span> atributo4, <span class="keywordtype">int</span> atributo5, <span class="keywordtype">int</span> atributo6, <span class="keywordtype">int</span> atributo7);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <a class="code hl_class" href="class_jogador.html">Jogador</a>* <a class="code hl_function" href="class_admin.html#a6b47cf19d6e7a5e3b21ab7e4d022f399">buscaApelido</a>(std::string apelido);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_admin.html#a8717c69cb4acb9b83c877f68fa5f96ff">uptadeJogadores</a>();</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_admin.html#a377dbad0dbf77cc7c9763c2a319576dc">listarUsuarios</a>();</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    std::vector&lt;Jogador*&gt; <a class="code hl_function" href="class_admin.html#a894d89d95bf804db326a68cb0489526b">removerJogador</a>(std::string apelido);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <a class="code hl_function" href="class_admin.html#a8fb5fe72fb4e05d50980c13cdf3b779c">~Admin</a>();</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>};</div>
+</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="preprocessor">#endif </span><span class="comment">// ADMIN_H</span></div>
+<div class="ttc" id="a_jogador_8hpp_html"><div class="ttname"><a href="_jogador_8hpp.html">Jogador.hpp</a></div></div>
+<div class="ttc" id="aclass_admin_html_a377dbad0dbf77cc7c9763c2a319576dc"><div class="ttname"><a href="class_admin.html#a377dbad0dbf77cc7c9763c2a319576dc">Admin::listarUsuarios</a></div><div class="ttdeci">void listarUsuarios()</div><div class="ttdoc">Lista todos os usuários cadastrados.</div><div class="ttdef"><b>Definição</b> <a href="_admin_8cpp_source.html#l00095">Admin.cpp:95</a></div></div>
+<div class="ttc" id="aclass_admin_html_a4f7dd64601d93c208b9f8577fbc2282d"><div class="ttname"><a href="class_admin.html#a4f7dd64601d93c208b9f8577fbc2282d">Admin::createJogador</a></div><div class="ttdeci">Jogador * createJogador(std::string nome, std::string apelido, int atributo1, int atributo2, int atributo3, int atributo4, int atributo5, int atributo6, int atributo7)</div><div class="ttdoc">Cria um novo jogador com todos os atributos fornecidos.</div></div>
+<div class="ttc" id="aclass_admin_html_a6b47cf19d6e7a5e3b21ab7e4d022f399"><div class="ttname"><a href="class_admin.html#a6b47cf19d6e7a5e3b21ab7e4d022f399">Admin::buscaApelido</a></div><div class="ttdeci">Jogador * buscaApelido(std::string apelido)</div><div class="ttdoc">Busca um jogador pelo apelido.</div><div class="ttdef"><b>Definição</b> <a href="_admin_8cpp_source.html#l00111">Admin.cpp:111</a></div></div>
+<div class="ttc" id="aclass_admin_html_a8717c69cb4acb9b83c877f68fa5f96ff"><div class="ttname"><a href="class_admin.html#a8717c69cb4acb9b83c877f68fa5f96ff">Admin::uptadeJogadores</a></div><div class="ttdeci">void uptadeJogadores()</div><div class="ttdoc">Atualiza os dados dos jogadores no arquivo.</div><div class="ttdef"><b>Definição</b> <a href="_admin_8cpp_source.html#l00143">Admin.cpp:143</a></div></div>
+<div class="ttc" id="aclass_admin_html_a894d89d95bf804db326a68cb0489526b"><div class="ttname"><a href="class_admin.html#a894d89d95bf804db326a68cb0489526b">Admin::removerJogador</a></div><div class="ttdeci">std::vector&lt; Jogador * &gt; removerJogador(std::string apelido)</div><div class="ttdoc">Remove um jogador pelo apelido.</div><div class="ttdef"><b>Definição</b> <a href="_admin_8cpp_source.html#l00127">Admin.cpp:127</a></div></div>
+<div class="ttc" id="aclass_admin_html_a8fb5fe72fb4e05d50980c13cdf3b779c"><div class="ttname"><a href="class_admin.html#a8fb5fe72fb4e05d50980c13cdf3b779c">Admin::~Admin</a></div><div class="ttdeci">~Admin()</div><div class="ttdoc">Destrutor da classe Admin.</div><div class="ttdef"><b>Definição</b> <a href="_admin_8cpp_source.html#l00161">Admin.cpp:161</a></div></div>
+<div class="ttc" id="aclass_admin_html_ab9e0bae6e2aa2cb4451e4b6076c5e8ab"><div class="ttname"><a href="class_admin.html#ab9e0bae6e2aa2cb4451e4b6076c5e8ab">Admin::createJogador</a></div><div class="ttdeci">Jogador * createJogador(std::string nome, std::string apelido)</div><div class="ttdoc">Cria um novo jogador com nome e apelido.</div></div>
+<div class="ttc" id="aclass_admin_html_af035c0358e40658194926a608d44b1b8"><div class="ttname"><a href="class_admin.html#af035c0358e40658194926a608d44b1b8">Admin::Admin</a></div><div class="ttdeci">Admin(std::string arquivo)</div><div class="ttdoc">Construtor da classe Admin.</div><div class="ttdef"><b>Definição</b> <a href="_admin_8cpp_source.html#l00028">Admin.cpp:28</a></div></div>
+<div class="ttc" id="aclass_jogador_html"><div class="ttname"><a href="class_jogador.html">Jogador</a></div><div class="ttdoc">Classe que representa um jogador, derivada de Usuario.</div><div class="ttdef"><b>Definição</b> <a href="_jogador_8hpp_source.html#l00010">Jogador.hpp:10</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

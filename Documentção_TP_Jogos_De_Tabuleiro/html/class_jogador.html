@@ -1,0 +1,824 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Jogos de Tabuleiro: Referência da Classe Jogador</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Jogos de Tabuleiro<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">O Projeto de Jogos de Tabuleiro é uma plataforma desenvolvida em linguagem C++ com o objetivo de realizar um sistema unificado e modular de jogos clássicos, como Reversi, conhecido também como Othello, Lig4 e o Jogo da Velha.</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Membros Públicos</a> &#124;
+<a href="class_jogador-members.html">Lista de todos os Membros</a>  </div>
+  <div class="headertitle"><div class="title">Referência da Classe Jogador</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Classe que representa um jogador, derivada de <a class="el" href="class_usuario.html" title="Classe que representa um usuário de um jogo.">Usuario</a>.  
+ <a href="#details">Mais...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_jogador_8hpp_source.html">Jogador.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de hierarquia da classe Jogador:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_jogador.png" usemap="#Jogador_map" alt=""/>
+  <map id="Jogador_map" name="Jogador_map">
+<area href="class_usuario.html" title="Classe que representa um usuário de um jogo." alt="Usuario" shape="rect" coords="0,0,59,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Membros Públicos</h2></td></tr>
+<tr class="memitem:a0a94e8a1bc777aaf062f866de53c7ebf" id="r_a0a94e8a1bc777aaf062f866de53c7ebf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a94e8a1bc777aaf062f866de53c7ebf">Jogador</a> (std::string nome, std::string apelido)</td></tr>
+<tr class="memdesc:a0a94e8a1bc777aaf062f866de53c7ebf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor para inicializar um jogador com nome e apelido.  <br /></td></tr>
+<tr class="separator:a0a94e8a1bc777aaf062f866de53c7ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c9c38c79cf226036bef54596aca7b08" id="r_a6c9c38c79cf226036bef54596aca7b08"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c9c38c79cf226036bef54596aca7b08">Jogador</a> (std::string nome, std::string apelido, int vitVel, int vitRev, int vitLig, int derVel, int derRev, int derLig)</td></tr>
+<tr class="memdesc:a6c9c38c79cf226036bef54596aca7b08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor para inicializar um jogador com todos os atributos.  <br /></td></tr>
+<tr class="separator:a6c9c38c79cf226036bef54596aca7b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a80e71c5e3cfa6aa3ce91d6a93552d2" id="r_a6a80e71c5e3cfa6aa3ce91d6a93552d2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a80e71c5e3cfa6aa3ce91d6a93552d2">Jogador</a> (const <a class="el" href="class_jogador.html">Jogador</a> &amp;outro)</td></tr>
+<tr class="memdesc:a6a80e71c5e3cfa6aa3ce91d6a93552d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor de cópia.  <br /></td></tr>
+<tr class="separator:a6a80e71c5e3cfa6aa3ce91d6a93552d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68c52eca98b59f051199b69113dfbe74" id="r_a68c52eca98b59f051199b69113dfbe74"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_jogador.html">Jogador</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a68c52eca98b59f051199b69113dfbe74">operator=</a> (const <a class="el" href="class_jogador.html">Jogador</a> &amp;outro)</td></tr>
+<tr class="memdesc:a68c52eca98b59f051199b69113dfbe74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operador de atribuição.  <br /></td></tr>
+<tr class="separator:a68c52eca98b59f051199b69113dfbe74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3577feb380bd4c3318c08628cef254df" id="r_a3577feb380bd4c3318c08628cef254df"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3577feb380bd4c3318c08628cef254df">getVitVel</a> ()</td></tr>
+<tr class="memdesc:a3577feb380bd4c3318c08628cef254df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtém o número de vitórias em partidas de velocidade.  <br /></td></tr>
+<tr class="separator:a3577feb380bd4c3318c08628cef254df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeda6a8f49aeb5a557a5b58de6ee6833" id="r_afeda6a8f49aeb5a557a5b58de6ee6833"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afeda6a8f49aeb5a557a5b58de6ee6833">getVitRev</a> ()</td></tr>
+<tr class="memdesc:afeda6a8f49aeb5a557a5b58de6ee6833"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtém o número de vitórias em partidas de reversão.  <br /></td></tr>
+<tr class="separator:afeda6a8f49aeb5a557a5b58de6ee6833"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc5b9de95f846ffee2a7d5b21871e020" id="r_abc5b9de95f846ffee2a7d5b21871e020"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc5b9de95f846ffee2a7d5b21871e020">getVitLig</a> ()</td></tr>
+<tr class="memdesc:abc5b9de95f846ffee2a7d5b21871e020"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtém o número de vitórias em partidas de ligação.  <br /></td></tr>
+<tr class="separator:abc5b9de95f846ffee2a7d5b21871e020"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaee0500df56bdf28ecff5b887bc2bae6" id="r_aaee0500df56bdf28ecff5b887bc2bae6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaee0500df56bdf28ecff5b887bc2bae6">getDerVel</a> ()</td></tr>
+<tr class="memdesc:aaee0500df56bdf28ecff5b887bc2bae6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtém o número de derrotas em partidas de velocidade.  <br /></td></tr>
+<tr class="separator:aaee0500df56bdf28ecff5b887bc2bae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10d1d1c52c53d00dd75819cfa6078c3c" id="r_a10d1d1c52c53d00dd75819cfa6078c3c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10d1d1c52c53d00dd75819cfa6078c3c">getDerRev</a> ()</td></tr>
+<tr class="memdesc:a10d1d1c52c53d00dd75819cfa6078c3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtém o número de derrotas em partidas de reversão.  <br /></td></tr>
+<tr class="separator:a10d1d1c52c53d00dd75819cfa6078c3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1f786b84599a4e8e69303941e3e1716" id="r_ab1f786b84599a4e8e69303941e3e1716"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab1f786b84599a4e8e69303941e3e1716">getDerLig</a> ()</td></tr>
+<tr class="memdesc:ab1f786b84599a4e8e69303941e3e1716"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtém o número de derrotas em partidas de ligação.  <br /></td></tr>
+<tr class="separator:ab1f786b84599a4e8e69303941e3e1716"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa79789c5ab3852ac007d4d611d0c2576" id="r_aa79789c5ab3852ac007d4d611d0c2576"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa79789c5ab3852ac007d4d611d0c2576">setVitVel</a> (int vitVel)</td></tr>
+<tr class="memdesc:aa79789c5ab3852ac007d4d611d0c2576"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define o número de vitórias em partidas de velocidade.  <br /></td></tr>
+<tr class="separator:aa79789c5ab3852ac007d4d611d0c2576"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1171e51cc7ddd649d99bfaa8cdc405e" id="r_ad1171e51cc7ddd649d99bfaa8cdc405e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad1171e51cc7ddd649d99bfaa8cdc405e">setVitRev</a> (int vitRev)</td></tr>
+<tr class="memdesc:ad1171e51cc7ddd649d99bfaa8cdc405e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define o número de vitórias em partidas de reversão.  <br /></td></tr>
+<tr class="separator:ad1171e51cc7ddd649d99bfaa8cdc405e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a759bb7ee2a5148baf083ddc3542c4bdb" id="r_a759bb7ee2a5148baf083ddc3542c4bdb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a759bb7ee2a5148baf083ddc3542c4bdb">setVitLig</a> (int vitLig)</td></tr>
+<tr class="memdesc:a759bb7ee2a5148baf083ddc3542c4bdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define o número de vitórias em partidas de ligação.  <br /></td></tr>
+<tr class="separator:a759bb7ee2a5148baf083ddc3542c4bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5601c2716deaee9333a98fb7ed4f6e8" id="r_ae5601c2716deaee9333a98fb7ed4f6e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae5601c2716deaee9333a98fb7ed4f6e8">setDerVel</a> (int derVel)</td></tr>
+<tr class="memdesc:ae5601c2716deaee9333a98fb7ed4f6e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define o número de derrotas em partidas de velocidade.  <br /></td></tr>
+<tr class="separator:ae5601c2716deaee9333a98fb7ed4f6e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3bdbaa3991abcd31570293c1bcd05d9" id="r_af3bdbaa3991abcd31570293c1bcd05d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af3bdbaa3991abcd31570293c1bcd05d9">setDerRev</a> (int derRev)</td></tr>
+<tr class="memdesc:af3bdbaa3991abcd31570293c1bcd05d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define o número de derrotas em partidas de reversão.  <br /></td></tr>
+<tr class="separator:af3bdbaa3991abcd31570293c1bcd05d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1069afdd9268ee00d424e5901a986679" id="r_a1069afdd9268ee00d424e5901a986679"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1069afdd9268ee00d424e5901a986679">setDerLig</a> (int derLig)</td></tr>
+<tr class="memdesc:a1069afdd9268ee00d424e5901a986679"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define o número de derrotas em partidas de ligação.  <br /></td></tr>
+<tr class="separator:a1069afdd9268ee00d424e5901a986679"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a366a940bb09ba83a6db61989396bb8e8" id="r_a366a940bb09ba83a6db61989396bb8e8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a366a940bb09ba83a6db61989396bb8e8">~Jogador</a> () override</td></tr>
+<tr class="memdesc:a366a940bb09ba83a6db61989396bb8e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destrutor da classe <a class="el" href="class_jogador.html" title="Classe que representa um jogador, derivada de Usuario.">Jogador</a>.  <br /></td></tr>
+<tr class="separator:a366a940bb09ba83a6db61989396bb8e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa91b6b4737fa1e7fa3f38ab3531eee5d" id="r_aa91b6b4737fa1e7fa3f38ab3531eee5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa91b6b4737fa1e7fa3f38ab3531eee5d">mostrarTabela</a> ()</td></tr>
+<tr class="memdesc:aa91b6b4737fa1e7fa3f38ab3531eee5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exibe uma tabela com as estatísticas do jogador.  <br /></td></tr>
+<tr class="separator:aa91b6b4737fa1e7fa3f38ab3531eee5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_usuario"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_usuario')"><img src="closed.png" alt="-"/>&#160;Membros Públicos herdados de <a class="el" href="class_usuario.html">Usuario</a></td></tr>
+<tr class="memitem:a0a7f06f65a60dd3bf56e29814b912e28 inherit pub_methods_class_usuario" id="r_a0a7f06f65a60dd3bf56e29814b912e28"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_usuario.html#a0a7f06f65a60dd3bf56e29814b912e28">Usuario</a> (std::string nome, std::string apelido)</td></tr>
+<tr class="memdesc:a0a7f06f65a60dd3bf56e29814b912e28 inherit pub_methods_class_usuario"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor da classe <a class="el" href="class_usuario.html" title="Classe que representa um usuário de um jogo.">Usuario</a>.  <br /></td></tr>
+<tr class="separator:a0a7f06f65a60dd3bf56e29814b912e28 inherit pub_methods_class_usuario"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7676bda85eaf8d073138b9d443033dff inherit pub_methods_class_usuario" id="r_a7676bda85eaf8d073138b9d443033dff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_usuario.html#a7676bda85eaf8d073138b9d443033dff">Usuario</a> (std::string nome, std::string apelido, int vit, int der, int seq)</td></tr>
+<tr class="memdesc:a7676bda85eaf8d073138b9d443033dff inherit pub_methods_class_usuario"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor da classe <a class="el" href="class_usuario.html" title="Classe que representa um usuário de um jogo.">Usuario</a> com valores personalizados para vitórias, derrotas e sequência.  <br /></td></tr>
+<tr class="separator:a7676bda85eaf8d073138b9d443033dff inherit pub_methods_class_usuario"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bb88f88163049cafd25e0840cb7034b inherit pub_methods_class_usuario" id="r_a4bb88f88163049cafd25e0840cb7034b"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_usuario.html#a4bb88f88163049cafd25e0840cb7034b">~Usuario</a> ()</td></tr>
+<tr class="memdesc:a4bb88f88163049cafd25e0840cb7034b inherit pub_methods_class_usuario"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruidor da classe <a class="el" href="class_usuario.html" title="Classe que representa um usuário de um jogo.">Usuario</a>.  <br /></td></tr>
+<tr class="separator:a4bb88f88163049cafd25e0840cb7034b inherit pub_methods_class_usuario"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca725547a496bfe313faac8e90bf37a7 inherit pub_methods_class_usuario" id="r_aca725547a496bfe313faac8e90bf37a7"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_usuario.html#aca725547a496bfe313faac8e90bf37a7">getNome</a> ()</td></tr>
+<tr class="memdesc:aca725547a496bfe313faac8e90bf37a7 inherit pub_methods_class_usuario"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o nome do usuário.  <br /></td></tr>
+<tr class="separator:aca725547a496bfe313faac8e90bf37a7 inherit pub_methods_class_usuario"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af73d2060044bffdb1c188d79c4b8f522 inherit pub_methods_class_usuario" id="r_af73d2060044bffdb1c188d79c4b8f522"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_usuario.html#af73d2060044bffdb1c188d79c4b8f522">getApelido</a> ()</td></tr>
+<tr class="memdesc:af73d2060044bffdb1c188d79c4b8f522 inherit pub_methods_class_usuario"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o apelido do usuário.  <br /></td></tr>
+<tr class="separator:af73d2060044bffdb1c188d79c4b8f522 inherit pub_methods_class_usuario"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63b415a4f3d87abd1daa9a9112f9417a inherit pub_methods_class_usuario" id="r_a63b415a4f3d87abd1daa9a9112f9417a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_usuario.html#a63b415a4f3d87abd1daa9a9112f9417a">getVitorias</a> ()</td></tr>
+<tr class="memdesc:a63b415a4f3d87abd1daa9a9112f9417a inherit pub_methods_class_usuario"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o número de vitórias do usuário.  <br /></td></tr>
+<tr class="separator:a63b415a4f3d87abd1daa9a9112f9417a inherit pub_methods_class_usuario"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9713d3d3bd4bd6c309f6e826b203fc98 inherit pub_methods_class_usuario" id="r_a9713d3d3bd4bd6c309f6e826b203fc98"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_usuario.html#a9713d3d3bd4bd6c309f6e826b203fc98">getDerrotas</a> ()</td></tr>
+<tr class="memdesc:a9713d3d3bd4bd6c309f6e826b203fc98 inherit pub_methods_class_usuario"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o número de derrotas do usuário.  <br /></td></tr>
+<tr class="separator:a9713d3d3bd4bd6c309f6e826b203fc98 inherit pub_methods_class_usuario"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9ba640592be621214f6d00a2981695b inherit pub_methods_class_usuario" id="r_ae9ba640592be621214f6d00a2981695b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_usuario.html#ae9ba640592be621214f6d00a2981695b">getSequencia</a> ()</td></tr>
+<tr class="memdesc:ae9ba640592be621214f6d00a2981695b inherit pub_methods_class_usuario"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna a sequência de vitórias do usuário.  <br /></td></tr>
+<tr class="separator:ae9ba640592be621214f6d00a2981695b inherit pub_methods_class_usuario"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4358881273349bfa4da22164e79f94c5 inherit pub_methods_class_usuario" id="r_a4358881273349bfa4da22164e79f94c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_usuario.html#a4358881273349bfa4da22164e79f94c5">setVitorias</a> (int vit)</td></tr>
+<tr class="memdesc:a4358881273349bfa4da22164e79f94c5 inherit pub_methods_class_usuario"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define o número de vitórias do usuário.  <br /></td></tr>
+<tr class="separator:a4358881273349bfa4da22164e79f94c5 inherit pub_methods_class_usuario"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ca0b1a713c62cc325723c8d7554bdb4 inherit pub_methods_class_usuario" id="r_a9ca0b1a713c62cc325723c8d7554bdb4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_usuario.html#a9ca0b1a713c62cc325723c8d7554bdb4">setDerrotas</a> (int der)</td></tr>
+<tr class="memdesc:a9ca0b1a713c62cc325723c8d7554bdb4 inherit pub_methods_class_usuario"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define o número de derrotas do usuário.  <br /></td></tr>
+<tr class="separator:a9ca0b1a713c62cc325723c8d7554bdb4 inherit pub_methods_class_usuario"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37ed4c069216d7657454803e328a77d0 inherit pub_methods_class_usuario" id="r_a37ed4c069216d7657454803e328a77d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_usuario.html#a37ed4c069216d7657454803e328a77d0">setSequencia</a> (int seq)</td></tr>
+<tr class="memdesc:a37ed4c069216d7657454803e328a77d0 inherit pub_methods_class_usuario"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a sequência de vitórias do usuário.  <br /></td></tr>
+<tr class="separator:a37ed4c069216d7657454803e328a77d0 inherit pub_methods_class_usuario"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Classe que representa um jogador, derivada de <a class="el" href="class_usuario.html" title="Classe que representa um usuário de um jogo.">Usuario</a>. </p>
+
+<p class="definition">Definição na linha <a class="el" href="_jogador_8hpp_source.html#l00010">10</a> do arquivo <a class="el" href="_jogador_8hpp_source.html">Jogador.hpp</a>.</p>
+</div><h2 class="groupheader">Construtores e Destrutores</h2>
+<a id="a0a94e8a1bc777aaf062f866de53c7ebf" name="a0a94e8a1bc777aaf062f866de53c7ebf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a94e8a1bc777aaf062f866de53c7ebf">&#9670;&#160;</a></span>Jogador() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Jogador::Jogador </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>nome</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>apelido</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construtor para inicializar um jogador com nome e apelido. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nome</td><td>Nome do jogador. </td></tr>
+    <tr><td class="paramname">apelido</td><td>Apelido do jogador. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6c9c38c79cf226036bef54596aca7b08" name="a6c9c38c79cf226036bef54596aca7b08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c9c38c79cf226036bef54596aca7b08">&#9670;&#160;</a></span>Jogador() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Jogador::Jogador </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>nome</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>apelido</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>vitVel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>vitRev</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>vitLig</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>derVel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>derRev</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>derLig</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construtor para inicializar um jogador com todos os atributos. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nome</td><td>Nome do jogador. </td></tr>
+    <tr><td class="paramname">apelido</td><td>Apelido do jogador. </td></tr>
+    <tr><td class="paramname">vitVel</td><td>Número de vitórias em velocidade. </td></tr>
+    <tr><td class="paramname">vitRev</td><td>Número de vitórias em reversão. </td></tr>
+    <tr><td class="paramname">vitLig</td><td>Número de vitórias em ligação. </td></tr>
+    <tr><td class="paramname">derVel</td><td>Número de derrotas em velocidade. </td></tr>
+    <tr><td class="paramname">derRev</td><td>Número de derrotas em reversão. </td></tr>
+    <tr><td class="paramname">derLig</td><td>Número de derrotas em ligação. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6a80e71c5e3cfa6aa3ce91d6a93552d2" name="a6a80e71c5e3cfa6aa3ce91d6a93552d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a80e71c5e3cfa6aa3ce91d6a93552d2">&#9670;&#160;</a></span>Jogador() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Jogador::Jogador </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_jogador.html">Jogador</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>outro</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construtor de cópia. </p>
+<p>Construtor de cópia, cria um novo jogador com os dados de outro jogador.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">outro</td><td>Referência para outro objeto <a class="el" href="class_jogador.html" title="Classe que representa um jogador, derivada de Usuario.">Jogador</a> a ser copiado.</td></tr>
+    <tr><td class="paramname">outro</td><td><a class="el" href="class_jogador.html" title="Classe que representa um jogador, derivada de Usuario.">Jogador</a> a ser copiado. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definição na linha <a class="el" href="_jogador_8cpp_source.html#l00158">158</a> do arquivo <a class="el" href="_jogador_8cpp_source.html">Jogador.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  159</span>    : <a class="code hl_function" href="class_usuario.html#a0a7f06f65a60dd3bf56e29814b912e28">Usuario</a>(outro), vitVel(outro.vitVel), vitRev(outro.vitRev), vitLig(outro.vitLig),</div>
+<div class="line"><span class="lineno">  160</span>      derVel(outro.derVel), derRev(outro.derRev), derLig(outro.derLig) {}</div>
+<div class="ttc" id="aclass_usuario_html_a0a7f06f65a60dd3bf56e29814b912e28"><div class="ttname"><a href="class_usuario.html#a0a7f06f65a60dd3bf56e29814b912e28">Usuario::Usuario</a></div><div class="ttdeci">Usuario(std::string nome, std::string apelido)</div><div class="ttdoc">Construtor da classe Usuario.</div><div class="ttdef"><b>Definição</b> <a href="_usuario_8hpp_source.html#l00028">Usuario.hpp:28</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a366a940bb09ba83a6db61989396bb8e8" name="a366a940bb09ba83a6db61989396bb8e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a366a940bb09ba83a6db61989396bb8e8">&#9670;&#160;</a></span>~Jogador()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Jogador::~Jogador </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destrutor da classe <a class="el" href="class_jogador.html" title="Classe que representa um jogador, derivada de Usuario.">Jogador</a>. </p>
+
+<p class="definition">Definição na linha <a class="el" href="_jogador_8hpp_source.html#l00167">167</a> do arquivo <a class="el" href="_jogador_8hpp_source.html">Jogador.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  167</span>{}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="ab1f786b84599a4e8e69303941e3e1716" name="ab1f786b84599a4e8e69303941e3e1716"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1f786b84599a4e8e69303941e3e1716">&#9670;&#160;</a></span>getDerLig()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Jogador::getDerLig </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Obtém o número de derrotas em partidas de ligação. </p>
+<p>Retorna o número de derrotas no jogo Lig4.</p>
+<dl class="section return"><dt>Retorna</dt><dd>Número de derrotas em ligação.</dd>
+<dd>
+Número de derrotas no jogo Lig4. </dd></dl>
+
+<p class="definition">Definição na linha <a class="el" href="_jogador_8cpp_source.html#l00095">95</a> do arquivo <a class="el" href="_jogador_8cpp_source.html">Jogador.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   95</span>                       {</div>
+<div class="line"><span class="lineno">   96</span>    <span class="keywordflow">return</span> derLig;</div>
+<div class="line"><span class="lineno">   97</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a10d1d1c52c53d00dd75819cfa6078c3c" name="a10d1d1c52c53d00dd75819cfa6078c3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10d1d1c52c53d00dd75819cfa6078c3c">&#9670;&#160;</a></span>getDerRev()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Jogador::getDerRev </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Obtém o número de derrotas em partidas de reversão. </p>
+<p>Retorna o número de derrotas no jogo <a class="el" href="class_reversi.html" title="Classe que representa o jogo Reversi, herda de JogosTab.">Reversi</a>.</p>
+<dl class="section return"><dt>Retorna</dt><dd>Número de derrotas em reversão.</dd>
+<dd>
+Número de derrotas no jogo <a class="el" href="class_reversi.html" title="Classe que representa o jogo Reversi, herda de JogosTab.">Reversi</a>. </dd></dl>
+
+<p class="definition">Definição na linha <a class="el" href="_jogador_8cpp_source.html#l00086">86</a> do arquivo <a class="el" href="_jogador_8cpp_source.html">Jogador.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   86</span>                       {</div>
+<div class="line"><span class="lineno">   87</span>    <span class="keywordflow">return</span> derRev;</div>
+<div class="line"><span class="lineno">   88</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aaee0500df56bdf28ecff5b887bc2bae6" name="aaee0500df56bdf28ecff5b887bc2bae6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaee0500df56bdf28ecff5b887bc2bae6">&#9670;&#160;</a></span>getDerVel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Jogador::getDerVel </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Obtém o número de derrotas em partidas de velocidade. </p>
+<p>Retorna o número de derrotas no jogo Velha.</p>
+<dl class="section return"><dt>Retorna</dt><dd>Número de derrotas em velocidade.</dd>
+<dd>
+Número de derrotas no jogo Velha. </dd></dl>
+
+<p class="definition">Definição na linha <a class="el" href="_jogador_8cpp_source.html#l00077">77</a> do arquivo <a class="el" href="_jogador_8cpp_source.html">Jogador.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   77</span>                       {</div>
+<div class="line"><span class="lineno">   78</span>    <span class="keywordflow">return</span> derVel;</div>
+<div class="line"><span class="lineno">   79</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="abc5b9de95f846ffee2a7d5b21871e020" name="abc5b9de95f846ffee2a7d5b21871e020"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc5b9de95f846ffee2a7d5b21871e020">&#9670;&#160;</a></span>getVitLig()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Jogador::getVitLig </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Obtém o número de vitórias em partidas de ligação. </p>
+<p>Retorna o número de vitórias no jogo Lig4.</p>
+<dl class="section return"><dt>Retorna</dt><dd>Número de vitórias em ligação.</dd>
+<dd>
+Número de vitórias no jogo Lig4. </dd></dl>
+
+<p class="definition">Definição na linha <a class="el" href="_jogador_8cpp_source.html#l00068">68</a> do arquivo <a class="el" href="_jogador_8cpp_source.html">Jogador.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   68</span>                       {</div>
+<div class="line"><span class="lineno">   69</span>    <span class="keywordflow">return</span> vitLig;</div>
+<div class="line"><span class="lineno">   70</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="afeda6a8f49aeb5a557a5b58de6ee6833" name="afeda6a8f49aeb5a557a5b58de6ee6833"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afeda6a8f49aeb5a557a5b58de6ee6833">&#9670;&#160;</a></span>getVitRev()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Jogador::getVitRev </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Obtém o número de vitórias em partidas de reversão. </p>
+<p>Retorna o número de vitórias no jogo <a class="el" href="class_reversi.html" title="Classe que representa o jogo Reversi, herda de JogosTab.">Reversi</a>.</p>
+<dl class="section return"><dt>Retorna</dt><dd>Número de vitórias em reversão.</dd>
+<dd>
+Número de vitórias no jogo <a class="el" href="class_reversi.html" title="Classe que representa o jogo Reversi, herda de JogosTab.">Reversi</a>. </dd></dl>
+
+<p class="definition">Definição na linha <a class="el" href="_jogador_8cpp_source.html#l00059">59</a> do arquivo <a class="el" href="_jogador_8cpp_source.html">Jogador.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   59</span>                       {</div>
+<div class="line"><span class="lineno">   60</span>    <span class="keywordflow">return</span> vitRev;</div>
+<div class="line"><span class="lineno">   61</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3577feb380bd4c3318c08628cef254df" name="a3577feb380bd4c3318c08628cef254df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3577feb380bd4c3318c08628cef254df">&#9670;&#160;</a></span>getVitVel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Jogador::getVitVel </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Obtém o número de vitórias em partidas de velocidade. </p>
+<p>Retorna o número de vitórias no jogo Velha.</p>
+<dl class="section return"><dt>Retorna</dt><dd>Número de vitórias em velocidade.</dd>
+<dd>
+Número de vitórias no jogo Velha. </dd></dl>
+
+<p class="definition">Definição na linha <a class="el" href="_jogador_8cpp_source.html#l00050">50</a> do arquivo <a class="el" href="_jogador_8cpp_source.html">Jogador.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   50</span>                       {</div>
+<div class="line"><span class="lineno">   51</span>    <span class="keywordflow">return</span> vitVel;</div>
+<div class="line"><span class="lineno">   52</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa91b6b4737fa1e7fa3f38ab3531eee5d" name="aa91b6b4737fa1e7fa3f38ab3531eee5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa91b6b4737fa1e7fa3f38ab3531eee5d">&#9670;&#160;</a></span>mostrarTabela()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Jogador::mostrarTabela </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Exibe uma tabela com as estatísticas do jogador. </p>
+<p>Exibe uma tabela. Função placeholder para ser implementada ou substituída. </p>
+
+<p>Implementa <a class="el" href="class_usuario.html#af66ea140abcf6a31348b2227b32e9726">Usuario</a>.</p>
+
+<p class="definition">Definição na linha <a class="el" href="_jogador_8cpp_source.html#l00041">41</a> do arquivo <a class="el" href="_jogador_8cpp_source.html">Jogador.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   41</span>                            {</div>
+<div class="line"><span class="lineno">   42</span>    cout &lt;&lt; <span class="stringliteral">&quot;Tabela!&quot;</span>;</div>
+<div class="line"><span class="lineno">   43</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a68c52eca98b59f051199b69113dfbe74" name="a68c52eca98b59f051199b69113dfbe74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68c52eca98b59f051199b69113dfbe74">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_jogador.html">Jogador</a> &amp; Jogador::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_jogador.html">Jogador</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>outro</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Operador de atribuição. </p>
+<p>Operador de atribuição para copiar as informações de um jogador para outro.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">outro</td><td>Referência para outro objeto <a class="el" href="class_jogador.html" title="Classe que representa um jogador, derivada de Usuario.">Jogador</a> a ser atribuído. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Referência para o objeto atual após a atribuição.</dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">outro</td><td><a class="el" href="class_jogador.html" title="Classe que representa um jogador, derivada de Usuario.">Jogador</a> a ser copiado. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Referência para o jogador atual. </dd></dl>
+
+<p class="definition">Definição na linha <a class="el" href="_jogador_8cpp_source.html#l00168">168</a> do arquivo <a class="el" href="_jogador_8cpp_source.html">Jogador.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  168</span>                                                {</div>
+<div class="line"><span class="lineno">  169</span>    <span class="keywordflow">if</span> (<span class="keyword">this</span> != &amp;outro) {</div>
+<div class="line"><span class="lineno">  170</span>        Usuario::operator=(outro);  <span class="comment">// Copia os dados da classe base</span></div>
+<div class="line"><span class="lineno">  171</span>        vitVel = outro.vitVel;</div>
+<div class="line"><span class="lineno">  172</span>        vitRev = outro.vitRev;</div>
+<div class="line"><span class="lineno">  173</span>        vitLig = outro.vitLig;</div>
+<div class="line"><span class="lineno">  174</span>        derVel = outro.derVel;</div>
+<div class="line"><span class="lineno">  175</span>        derRev = outro.derRev;</div>
+<div class="line"><span class="lineno">  176</span>        derLig = outro.derLig;</div>
+<div class="line"><span class="lineno">  177</span>    }</div>
+<div class="line"><span class="lineno">  178</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  179</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1069afdd9268ee00d424e5901a986679" name="a1069afdd9268ee00d424e5901a986679"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1069afdd9268ee00d424e5901a986679">&#9670;&#160;</a></span>setDerLig()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Jogador::setDerLig </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>derLig</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Define o número de derrotas em partidas de ligação. </p>
+<p>Define o número de derrotas no jogo Lig4.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">derLig</td><td>Número de derrotas em ligação.</td></tr>
+    <tr><td class="paramname">derLig</td><td>Número de derrotas no jogo Lig4. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definição na linha <a class="el" href="_jogador_8cpp_source.html#l00149">149</a> do arquivo <a class="el" href="_jogador_8cpp_source.html">Jogador.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  149</span>                                  {</div>
+<div class="line"><span class="lineno">  150</span>    this-&gt;derLig = derLig;</div>
+<div class="line"><span class="lineno">  151</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af3bdbaa3991abcd31570293c1bcd05d9" name="af3bdbaa3991abcd31570293c1bcd05d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3bdbaa3991abcd31570293c1bcd05d9">&#9670;&#160;</a></span>setDerRev()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Jogador::setDerRev </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>derRev</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Define o número de derrotas em partidas de reversão. </p>
+<p>Define o número de derrotas no jogo <a class="el" href="class_reversi.html" title="Classe que representa o jogo Reversi, herda de JogosTab.">Reversi</a>.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">derRev</td><td>Número de derrotas em reversão.</td></tr>
+    <tr><td class="paramname">derRev</td><td>Número de derrotas no jogo <a class="el" href="class_reversi.html" title="Classe que representa o jogo Reversi, herda de JogosTab.">Reversi</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definição na linha <a class="el" href="_jogador_8cpp_source.html#l00140">140</a> do arquivo <a class="el" href="_jogador_8cpp_source.html">Jogador.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  140</span>                                  {</div>
+<div class="line"><span class="lineno">  141</span>    this-&gt;derRev = derRev;</div>
+<div class="line"><span class="lineno">  142</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae5601c2716deaee9333a98fb7ed4f6e8" name="ae5601c2716deaee9333a98fb7ed4f6e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5601c2716deaee9333a98fb7ed4f6e8">&#9670;&#160;</a></span>setDerVel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Jogador::setDerVel </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>derVel</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Define o número de derrotas em partidas de velocidade. </p>
+<p>Define o número de derrotas no jogo Velha.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">derVel</td><td>Número de derrotas em velocidade.</td></tr>
+    <tr><td class="paramname">derVel</td><td>Número de derrotas no jogo Velha. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definição na linha <a class="el" href="_jogador_8cpp_source.html#l00131">131</a> do arquivo <a class="el" href="_jogador_8cpp_source.html">Jogador.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  131</span>                                  {</div>
+<div class="line"><span class="lineno">  132</span>    this-&gt;derVel = derVel;</div>
+<div class="line"><span class="lineno">  133</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a759bb7ee2a5148baf083ddc3542c4bdb" name="a759bb7ee2a5148baf083ddc3542c4bdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a759bb7ee2a5148baf083ddc3542c4bdb">&#9670;&#160;</a></span>setVitLig()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Jogador::setVitLig </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>vitLig</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Define o número de vitórias em partidas de ligação. </p>
+<p>Define o número de vitórias no jogo Lig4.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vitLig</td><td>Número de vitórias em ligação.</td></tr>
+    <tr><td class="paramname">vitLig</td><td>Número de vitórias no jogo Lig4. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definição na linha <a class="el" href="_jogador_8cpp_source.html#l00122">122</a> do arquivo <a class="el" href="_jogador_8cpp_source.html">Jogador.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  122</span>                                  {</div>
+<div class="line"><span class="lineno">  123</span>    this-&gt;vitLig = vitLig;</div>
+<div class="line"><span class="lineno">  124</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad1171e51cc7ddd649d99bfaa8cdc405e" name="ad1171e51cc7ddd649d99bfaa8cdc405e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1171e51cc7ddd649d99bfaa8cdc405e">&#9670;&#160;</a></span>setVitRev()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Jogador::setVitRev </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>vitRev</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Define o número de vitórias em partidas de reversão. </p>
+<p>Define o número de vitórias no jogo <a class="el" href="class_reversi.html" title="Classe que representa o jogo Reversi, herda de JogosTab.">Reversi</a>.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vitRev</td><td>Número de vitórias em reversão.</td></tr>
+    <tr><td class="paramname">vitRev</td><td>Número de vitórias no jogo <a class="el" href="class_reversi.html" title="Classe que representa o jogo Reversi, herda de JogosTab.">Reversi</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definição na linha <a class="el" href="_jogador_8cpp_source.html#l00113">113</a> do arquivo <a class="el" href="_jogador_8cpp_source.html">Jogador.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  113</span>                                  {</div>
+<div class="line"><span class="lineno">  114</span>    this-&gt;vitRev = vitRev;</div>
+<div class="line"><span class="lineno">  115</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa79789c5ab3852ac007d4d611d0c2576" name="aa79789c5ab3852ac007d4d611d0c2576"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa79789c5ab3852ac007d4d611d0c2576">&#9670;&#160;</a></span>setVitVel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Jogador::setVitVel </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>vitVel</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Define o número de vitórias em partidas de velocidade. </p>
+<p>Define o número de vitórias no jogo Velha.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vitVel</td><td>Número de vitórias em velocidade.</td></tr>
+    <tr><td class="paramname">vitVel</td><td>Número de vitórias no jogo Velha. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definição na linha <a class="el" href="_jogador_8cpp_source.html#l00104">104</a> do arquivo <a class="el" href="_jogador_8cpp_source.html">Jogador.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  104</span>                                  {</div>
+<div class="line"><span class="lineno">  105</span>    this-&gt;vitVel = vitVel;</div>
+<div class="line"><span class="lineno">  106</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<hr/>A documentação para essa classe foi gerada a partir dos seguintes arquivos:<ul>
+<li>C:/Users/thayl/OneDrive/Área de Trabalho/Projeto_Final_PDS2/include/<a class="el" href="_jogador_8hpp_source.html">Jogador.hpp</a></li>
+<li>C:/Users/thayl/OneDrive/Área de Trabalho/Projeto_Final_PDS2/src/<a class="el" href="_jogador_8cpp_source.html">Jogador.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

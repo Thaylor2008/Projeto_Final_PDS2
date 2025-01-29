@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Jogos de Tabuleiro: Código-Fonte de C:/Users/thayl/OneDrive/Área de Trabalho/Projeto_Final_PDS2/src/Usuario.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Jogos de Tabuleiro<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">O Projeto de Jogos de Tabuleiro é uma plataforma desenvolvida em linguagem C++ com o objetivo de realizar um sistema unificado e modular de jogos clássicos, como Reversi, conhecido também como Othello, Lig4 e o Jogo da Velha.</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_56d0f47407587960cd8030364c96746b.html">Projeto_Final_PDS2</a></li><li class="navelem"><a class="el" href="dir_fe61ff3a618479e2bb8f9e4663b72abd.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">Usuario.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_usuario_8cpp.html">Ir para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="_usuario_8hpp.html">Usuario.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;iomanip&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;sstream&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;fstream&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;cmath&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span></div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="}">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_usuario.html#aca725547a496bfe313faac8e90bf37a7">   19</a></span><span class="keywordtype">string</span> <a class="code hl_function" href="class_usuario.html#aca725547a496bfe313faac8e90bf37a7">Usuario::getNome</a>() {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordflow">return</span> nome;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>}</div>
+</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span></div>
+<div class="foldopen" id="foldopen00030" data-start="{" data-end="}">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_usuario.html#af73d2060044bffdb1c188d79c4b8f522">   30</a></span><span class="keywordtype">string</span> <a class="code hl_function" href="class_usuario.html#af73d2060044bffdb1c188d79c4b8f522">Usuario::getApelido</a>() {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordflow">return</span> apelido;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>}</div>
+</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span></div>
+<div class="foldopen" id="foldopen00041" data-start="{" data-end="}">
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="class_usuario.html#a63b415a4f3d87abd1daa9a9112f9417a">   41</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="class_usuario.html#a63b415a4f3d87abd1daa9a9112f9417a">Usuario::getVitorias</a>() {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordflow">return</span> vitorias;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>}</div>
+</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span></div>
+<div class="foldopen" id="foldopen00052" data-start="{" data-end="}">
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_usuario.html#a9713d3d3bd4bd6c309f6e826b203fc98">   52</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="class_usuario.html#a9713d3d3bd4bd6c309f6e826b203fc98">Usuario::getDerrotas</a>() {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordflow">return</span> derrotas;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>}</div>
+</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span></div>
+<div class="foldopen" id="foldopen00063" data-start="{" data-end="}">
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="class_usuario.html#ae9ba640592be621214f6d00a2981695b">   63</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="class_usuario.html#ae9ba640592be621214f6d00a2981695b">Usuario::getSequencia</a>() {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordflow">return</span> sequencia;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>}</div>
+</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span></div>
+<div class="foldopen" id="foldopen00074" data-start="{" data-end="}">
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="class_usuario.html#a4358881273349bfa4da22164e79f94c5">   74</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_usuario.html#a4358881273349bfa4da22164e79f94c5">Usuario::setVitorias</a>(<span class="keywordtype">int</span> vit) {</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    this-&gt;vitorias = vit;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>}</div>
+</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span></div>
+<div class="foldopen" id="foldopen00085" data-start="{" data-end="}">
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="class_usuario.html#a9ca0b1a713c62cc325723c8d7554bdb4">   85</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_usuario.html#a9ca0b1a713c62cc325723c8d7554bdb4">Usuario::setDerrotas</a>(<span class="keywordtype">int</span> der) {</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    this-&gt;derrotas = der;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>}</div>
+</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span></div>
+<div class="foldopen" id="foldopen00096" data-start="{" data-end="}">
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="class_usuario.html#a37ed4c069216d7657454803e328a77d0">   96</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_usuario.html#a37ed4c069216d7657454803e328a77d0">Usuario::setSequencia</a>(<span class="keywordtype">int</span> seq) {</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    this-&gt;sequencia = seq;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>}</div>
+</div>
+<div class="ttc" id="a_usuario_8hpp_html"><div class="ttname"><a href="_usuario_8hpp.html">Usuario.hpp</a></div></div>
+<div class="ttc" id="aclass_usuario_html_a37ed4c069216d7657454803e328a77d0"><div class="ttname"><a href="class_usuario.html#a37ed4c069216d7657454803e328a77d0">Usuario::setSequencia</a></div><div class="ttdeci">void setSequencia(int seq)</div><div class="ttdoc">Define a sequência de vitórias do usuário.</div><div class="ttdef"><b>Definição</b> <a href="#l00096">Usuario.cpp:96</a></div></div>
+<div class="ttc" id="aclass_usuario_html_a4358881273349bfa4da22164e79f94c5"><div class="ttname"><a href="class_usuario.html#a4358881273349bfa4da22164e79f94c5">Usuario::setVitorias</a></div><div class="ttdeci">void setVitorias(int vit)</div><div class="ttdoc">Define o número de vitórias do usuário.</div><div class="ttdef"><b>Definição</b> <a href="#l00074">Usuario.cpp:74</a></div></div>
+<div class="ttc" id="aclass_usuario_html_a63b415a4f3d87abd1daa9a9112f9417a"><div class="ttname"><a href="class_usuario.html#a63b415a4f3d87abd1daa9a9112f9417a">Usuario::getVitorias</a></div><div class="ttdeci">int getVitorias()</div><div class="ttdoc">Retorna o número de vitórias do usuário.</div><div class="ttdef"><b>Definição</b> <a href="#l00041">Usuario.cpp:41</a></div></div>
+<div class="ttc" id="aclass_usuario_html_a9713d3d3bd4bd6c309f6e826b203fc98"><div class="ttname"><a href="class_usuario.html#a9713d3d3bd4bd6c309f6e826b203fc98">Usuario::getDerrotas</a></div><div class="ttdeci">int getDerrotas()</div><div class="ttdoc">Retorna o número de derrotas do usuário.</div><div class="ttdef"><b>Definição</b> <a href="#l00052">Usuario.cpp:52</a></div></div>
+<div class="ttc" id="aclass_usuario_html_a9ca0b1a713c62cc325723c8d7554bdb4"><div class="ttname"><a href="class_usuario.html#a9ca0b1a713c62cc325723c8d7554bdb4">Usuario::setDerrotas</a></div><div class="ttdeci">void setDerrotas(int der)</div><div class="ttdoc">Define o número de derrotas do usuário.</div><div class="ttdef"><b>Definição</b> <a href="#l00085">Usuario.cpp:85</a></div></div>
+<div class="ttc" id="aclass_usuario_html_aca725547a496bfe313faac8e90bf37a7"><div class="ttname"><a href="class_usuario.html#aca725547a496bfe313faac8e90bf37a7">Usuario::getNome</a></div><div class="ttdeci">std::string getNome()</div><div class="ttdoc">Retorna o nome do usuário.</div><div class="ttdef"><b>Definição</b> <a href="#l00019">Usuario.cpp:19</a></div></div>
+<div class="ttc" id="aclass_usuario_html_ae9ba640592be621214f6d00a2981695b"><div class="ttname"><a href="class_usuario.html#ae9ba640592be621214f6d00a2981695b">Usuario::getSequencia</a></div><div class="ttdeci">int getSequencia()</div><div class="ttdoc">Retorna a sequência de vitórias do usuário.</div><div class="ttdef"><b>Definição</b> <a href="#l00063">Usuario.cpp:63</a></div></div>
+<div class="ttc" id="aclass_usuario_html_af73d2060044bffdb1c188d79c4b8f522"><div class="ttname"><a href="class_usuario.html#af73d2060044bffdb1c188d79c4b8f522">Usuario::getApelido</a></div><div class="ttdeci">std::string getApelido()</div><div class="ttdoc">Retorna o apelido do usuário.</div><div class="ttdef"><b>Definição</b> <a href="#l00030">Usuario.cpp:30</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>
