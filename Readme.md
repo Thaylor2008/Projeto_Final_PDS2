@@ -148,7 +148,8 @@
 ### Valgrind:
 *"Utilizamos do Valgrind para testar memory leaks em nosso código e segue a saída do Valgrind na última testagem: "*
 ![valgrind](https://raw.githubusercontent.com/Thaylor2008/Projeto_Final_PDS2/main/imagens/valgrindas.png)
-*"Documentação Valgrind: "* https://valgrind.org/
+
+Documentação Valgrind: https://valgrind.org/
 
 ## 🤝 Contribuições
 
