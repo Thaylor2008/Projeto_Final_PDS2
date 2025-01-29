@@ -83,6 +83,7 @@
 ![CRC Maker 3](https://raw.githubusercontent.com/Thaylor2008/Projeto_Final_PDS2/main/imagens/CRC%20Maker3_page-0001.jpg)
 
 *"Queríamos que os diferentes usuários pudessem ver diferentes listagens de todos os usuários, mantemos o dado Sequência, pois o conceito de streak é atrativo para jogadores, mas não fizemos nada com ele no final."*
+
 ---
 ## 🗂️ Estrutura do Projeto
 
