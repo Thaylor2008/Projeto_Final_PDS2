@@ -67,6 +67,20 @@
 *"Decidi implementar a classe `Admin` como responsável pela gestão de `Jogadores` e `Usuários`, respeitando os princípios de encapsulamento e responsabilidade. Inicialmente, planejava adicionar funcionalidades exclusivas para administradores (como permissões avançadas), mas, devido ao tempo, priorizamos outras features."*  
 — *Davi Santos Rodrigues*  
 
+### Usuario como classe abstrata
+*"Decidi implementar `Usuario` como uma classe abstrata porque inicialmete teríamos diferentes tipos de usuario, mas optamos por não continuar essa feature. Usuario segue como abstrata pois futuramente podem existir diferentes tipos de usuários para a aplicação"*
+- *Davi Santos Rodrigues*
+---
+## CRC's
+*"Os CRC's são uma ótima ferramenta de documentação, então não poderiam ficar de fora deste arquivo. Foi uma boa escolha manter a versão original dos CRC's, pois pode ser interessante comparar o que haviamos planejado no início com o que se tornou no final."*
+### CRC's iniciais
+![crc1](https://raw.githubusercontent.com/Thaylor2008/Projeto_Final_PDS2/main/imagens/CRCUSUARIOSTPPDS2 (1)_page-0001.jpg)
+![crc2](https://raw.githubusercontent.com/Thaylor2008/Projeto_Final_PDS2/main/imagens/CRC2 (1)_page-0001.jpg)
+*"Queriamos ter a feature de admin e inicialmente planejamos as partidas em cada jogo."*
+### CRC's finais
+![crc3](https://raw.githubusercontent.com/Thaylor2008/Projeto_Final_PDS2/main/imagens/CRC Maker4_page-0001.jpg)
+![crc4](https://raw.githubusercontent.com/Thaylor2008/Projeto_Final_PDS2/main/imagens/CRC Maker3_page-0001.jpg)
+*"Queríamos que os diferentes usuários pudessem ver diferentes listagens de todos os usuários, mantemos o dado Sequência, pois o conceito de streak é atrativo para jogadores, mas não fizemos nada com ele no final."*
 ---
 ## 🗂️ Estrutura do Projeto
 
