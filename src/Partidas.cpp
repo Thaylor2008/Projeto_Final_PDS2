@@ -69,9 +69,13 @@ void Partidas::executarPartida(char jogo, Jogador* jogador1, Jogador* jogador2) 
                     if (turnoJogador1) {
                         jogador1->setVitVel(jogador1->getVitVel() + 1);
                         jogador2->setDerVel(jogador2->getDerVel() + 1);
+                        jogador1->setSequencia(jogador1->getSequencia() + 1);
+                        jogador2->setSequencia(0);
                     } else {
                         jogador2->setVitVel(jogador2->getVitVel() + 1);
                         jogador1->setDerRev(jogador1->getDerRev() + 1);
+                        jogador2->setSequencia(jogador2->getSequencia() + 1);
+                        jogador1->setSequencia(0);
                     }
                     return;
                 }
@@ -130,10 +134,14 @@ void Partidas::executarPartida(char jogo, Jogador* jogador1, Jogador* jogador2) 
         if (partida.getPontosB() < partida.getPontosP()) {
             jogador1->setVitRev(jogador1->getVitRev() + 1);
             jogador2->setDerRev(jogador2->getDerRev() + 1);
+            jogador1->setSequencia(jogador1->getSequencia() + 1);
+            jogador2->setSequencia(0);
             cout << "Vitoria: " << jogador1->getApelido();
         } else if (partida.getPontosB() > partida.getPontosP()) {
             jogador2->setVitRev(jogador2->getVitRev() + 1);
             jogador1->setDerRev(jogador1->getDerRev() + 1);
+            jogador2->setSequencia(jogador2->getSequencia() + 1);
+            jogador1->setSequencia(0);
             cout << "Vitoria: " << jogador2->getApelido();
         } else {
             cout << "Empatou ;-;";
@@ -178,9 +186,13 @@ void Partidas::executarPartida(char jogo, Jogador* jogador1, Jogador* jogador2) 
                     if (turnoJogador1) {
                         jogador1->setVitLig(jogador1->getVitVel() + 1);
                         jogador2->setDerLig(jogador2->getDerVel() + 1);
+                        jogador1->setSequencia(jogador1->getSequencia() + 1);
+                        jogador2->setSequencia(0);
                     } else {
                         jogador2->setVitLig(jogador2->getVitVel() + 1);
                         jogador1->setDerLig(jogador1->getDerRev() + 1);
+                        jogador2->setSequencia(jogador2->getSequencia() + 1);
+                        jogador1->setSequencia(0);
                     }
                     return;
                 }
