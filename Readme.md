@@ -45,6 +45,7 @@
 
 ### reversi 
 *"Já no "Reversi" (Othello), o maior desafio está na complexidade das regras. A validação de jogadas requer verificar se a peça colocada pelo jogador irá cercar peças adversárias em pelo menos uma direção, o que envolve analisar linhas, colunas e diagonais simultaneamente. Também é necessária a implementação de uma lógica para inverter as peças cercadas, o que exige percorrer múltiplas direções a partir da jogada realizada. Outro obstáculo é determinar o fim do jogo, que depende de o tabuleiro estar cheio ou de nenhum jogador poder realizar jogadas válidas."*
+
 — *Thaylor Weslei Dias G. Verteiro* 
 
 ---
@@ -129,7 +130,7 @@
 - Sistema Operacional: **Windows e Linux (WSL)**
 ## 🤝 Contribuições
 
-- Desenvolvedores: **Davi Santos Rodrigues** e **Taylor**
+- Desenvolvedores: **Davi Santos Rodrigues** e **Thaylor Weslei Dias G. Verteiro**
 - Orientação: **Luiz Chaimowickz**
 ---
 ## 📝 Licença
