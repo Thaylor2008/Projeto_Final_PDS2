@@ -7,6 +7,7 @@
 #include "Admin.hpp"
 #include "Partidas.hpp"
 #include <limits>
+//Davi e Taylor, https://github.com/Thaylor2008/Projeto_Final_PDS2
 using namespace std;
 
 /**
