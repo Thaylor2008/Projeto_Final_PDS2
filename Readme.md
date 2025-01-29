@@ -145,6 +145,11 @@
 - Build System: **Makefile**
 - Editor: **Visual Studio Code**
 - Sistema Operacional: **Windows e Linux (WSL)**
+### Valgrind:
+*"Utilizamos do Valgrind para testar memory leaks em nosso código e segue a saída do Valgrind na última testagem: "*
+![valgrind](https://raw.githubusercontent.com/Thaylor2008/Projeto_Final_PDS2/main/imagens/valgrindas.png)
+*"Documentação Valgrind: "* https://valgrind.org/
+
 ## 🤝 Contribuições
 
 - Desenvolvedores: **Davi Santos Rodrigues** e **Thaylor Weslei Dias G. Verteiro**
