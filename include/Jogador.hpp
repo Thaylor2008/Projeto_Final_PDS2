@@ -60,7 +60,7 @@ public:
      * @param derRev Número de derrotas em reversão.
      * @param derLig Número de derrotas em ligação.
      */
-    Jogador(std::string nome, std::string apelido, int vitVel, int vitRev, int vitLig, int derVel, int derRev, int derLig);
+    Jogador(std::string nome, std::string apelido, int vitVel, int vitRev, int vitLig, int derVel, int derRev, int derLig, int seq);
 
     /**
      * @brief Construtor de cópia.
