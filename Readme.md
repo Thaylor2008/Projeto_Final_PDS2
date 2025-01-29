@@ -36,6 +36,17 @@
 *"Tentar abordar todos os erros possíveis se mostra um dos maiores desafios de toda a implementação. Acredito que fomos competentes e que conseguimos deixar o código bem robusto no final."*
 - *Davi Santos Rodrigues*
 
+### Desafio em criar os Jogos 
+### jogo da velha
+*"Os desafios que enfrentei na hora de implementar os jogos de tabuleiro, começando com o “Jogo da Velha”, foram na criação de um tabuleiro 3x3 gerenciado de forma eficiente, além de também ter dificuldades na hora de testar as jogadas e validar se estão dentro dos limites do tabuleiro e em células vazias. Outro desafio foi a verificação da condição de vitória, que exigia a identificação de combinações vencedoras em linhas, colunas ou diagonais. Além disso, era preciso implementar uma lógica para detectar empates, caso o tabuleiro estivesse cheio e nenhum jogador tivesse vencido."*  
+
+### ligue4
+*"No "Lig 4", os desafios se tornam mais complexos devido ao tabuleiro maior, de 6x7, e ao fato de as peças precisarem "cair" para a posição mais baixa disponível na coluna selecionada. Também foi necessário conferir as jogadas para garantir que o jogador escolhesse colunas dentro dos limites e que ainda houvesse espaço disponível. Determinar a condição de vitória também é um desafio significativo, pois é necessário verificar combinações de 4 peças consecutivas na horizontal, vertical e diagonais."*  
+
+### reversi 
+*"Já no "Reversi" (Othello), o maior desafio está na complexidade das regras. A validação de jogadas requer verificar se a peça colocada pelo jogador irá cercar peças adversárias em pelo menos uma direção, o que envolve analisar linhas, colunas e diagonais simultaneamente. Também é necessária a implementação de uma lógica para inverter as peças cercadas, o que exige percorrer múltiplas direções a partir da jogada realizada. Outro obstáculo é determinar o fim do jogo, que depende de o tabuleiro estar cheio ou de nenhum jogador poder realizar jogadas válidas."*
+— *Thaylor Weslei Dias G. Verteiro* 
+
 ---
 ## 💡 Escolhas de Implementação
 
