@@ -34,7 +34,7 @@
 
 ### Tratamento de Exceções
 *"Tentar abordar todos os erros possíveis se mostra um dos maiores desafios de toda a implementação. Acredito que fomos competentes e que conseguimos deixar o código bem robusto no final."*
-- *Davi Santos Rodrigues*
+— *Davi Santos Rodrigues*  
 
 ### Desafio em criar os Jogos 
 ### jogo da velha
